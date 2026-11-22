@@ -1,0 +1,75 @@
+{
+  "description": "Original media filenames preserved exactly; derived posters and crops are in assets/images.",
+  "media": [
+    {
+      "original_filename": "Snapshots showing the propogation of the vortex ring.jpg",
+      "section": "01 — Vortex-ring generation & characterisation",
+      "destination": "assets/media/",
+      "type": "JPEG image",
+      "included": true
+    },
+    {
+      "original_filename": "Vortex ring PIV_analysed into the MAtalb PIVlab.mp4",
+      "section": "01 — Vortex-ring generation & characterisation",
+      "destination": "assets/media/",
+      "type": "MP4 video",
+      "included": true
+    },
+    {
+      "original_filename": "droplet laden vortex flow facility developed at IIT Delhi.png",
+      "section": "02 — Vortex-ring/droplet interaction",
+      "destination": "assets/media/",
+      "type": "PNG image",
+      "included": true
+    },
+    {
+      "original_filename": "Interaction of vortex ring with polydisperse droplets.mp4",
+      "section": "02 — Vortex-ring/droplet interaction",
+      "destination": "assets/media/",
+      "type": "MP4 video",
+      "included": true
+    },
+    {
+      "original_filename": "Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4",
+      "section": "03 — Lagrangian tracking in the vortex frame",
+      "destination": "assets/media/",
+      "type": "MP4 video",
+      "included": true
+    },
+    {
+      "original_filename": "Vortex ring frame voronoii analysis.mp4",
+      "section": "04 — Preferential concentration and Voronoï",
+      "destination": "assets/media/",
+      "type": "MP4 video",
+      "included": true
+    },
+    {
+      "original_filename": "voronoii-analysis-in-the-vortex-frame-in-abl-like-tbl_ARNha4gT(1).mp4",
+      "section": "06 — Droplets in turbulent boundary layers",
+      "destination": "assets/media/",
+      "type": "MP4 video",
+      "included": true
+    },
+    {
+      "original_filename": "TBL + Droplets Interaction(1).jpeg",
+      "section": "Not published: source is a File Explorer screenshot, not facility image",
+      "destination": "Not applicable",
+      "type": "JPEG screenshot",
+      "included": false
+    },
+    {
+      "original_filename": "Figure 5.8 in submitted thesis (page 194 of PDF)",
+      "section": "05 — Collision-relevant pair statistics",
+      "destination": "assets/images/kinematic-kernel-thesis-fig-5-8.webp",
+      "type": "Derived image crop",
+      "included": true
+    },
+    {
+      "original_filename": "Figure 6.1 in submitted thesis (page 211 of PDF)",
+      "section": "06 — Turbulent boundary-layer facility",
+      "destination": "assets/images/wind-tunnel-arrangement-thesis-fig-6-1.webp",
+      "type": "Derived image crop",
+      "included": true
+    }
+  ]
+}
