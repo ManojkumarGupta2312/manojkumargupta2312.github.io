@@ -1,3 +1,13 @@
+# Manojkumar I. Gupta — research portfolio update (24 November 2026)
+
+This revision expands the scientific motivation on the landing page, spells out **Prime Minister’s Research Fellow (PMRF)** and moderately enlarges all nine research media panels while preserving their source aspect ratios.
+
+**Media layout:** Desktop research cards allocate approximately 62% of the available width to the video/image column and 38% to text. The media have a maximum display width of 650 px and maximum display height of 360 px; neither constraint changes the aspect ratio. On mobile, media appears above its description at its natural width within the viewport.
+
+**To update:** Extract this ZIP; open the folder containing `index.html`, `assets/` and `files/`. In GitHub Desktop choose **Repository → Show in Explorer**. Copy these new files and folders into the repository root and choose **Replace**. Do not delete the existing `.git`, `.github`, `CNAME` or `.nojekyll`. Check locally by opening `index.html`; commit and Push origin in GitHub Desktop. Refresh the published page with Ctrl+Shift+R after GitHub Pages deployment.
+
+To replace media, keep the file type and exact name: `assets/images/profile-photo.jpg`, `assets/images/tbl-facility.jpg`, and `assets/media/tbl-voronoi.mp4`. Images/video adjust to the dimensions of a replacement automatically, without cropping.
+
 # Website update: original media aspect ratios preserved
 
 **Version:** 24 November 2026 — Aspect-ratio-corrected edition.

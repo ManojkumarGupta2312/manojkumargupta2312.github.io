@@ -1,10 +1,10 @@
-﻿index,file,width,height,aspect_ratio,max_display_width,expected_desktop_height
-1,assets/media/droplet laden vortex flow facility developed at IIT Delhi.png,1892,938,2.01706,495,245
-2,assets/media/Snapshots showing the propogation of the vortex ring.jpg,3741,1295,2.8888,495,171
-3,assets/media/Vortex ring PIV_analysed into the MAtalb PIVlab.mp4,1550,900,1.72222,456,265
-4,assets/media/Interaction of vortex ring with polydisperse droplets.mp4,1280,1000,1.28,339,265
-5,assets/media/Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4,1688,1088,1.55147,411,265
-6,assets/media/Vortex ring frame voronoii analysis.mp4,1540,1078,1.42857,379,265
-7,assets/images/kinematic-kernel-thesis-fig-5-8.webp,1126,531,2.12053,495,233
-8,assets/images/tbl-facility.jpg,4420,1957,2.25856,495,219
-9,assets/media/tbl-voronoi.mp4,1500,1054,1.42315,377,265
+﻿index,file,width,height,aspect_ratio,max_display_width_px,expected_desktop_height_px
+1,assets/media/droplet laden vortex flow facility developed at IIT Delhi.png,1892,938,2.01706,650,322
+2,assets/media/Snapshots showing the propogation of the vortex ring.jpg,3741,1295,2.8888,650,225
+3,assets/media/Vortex ring PIV_analysed into the MAtalb PIVlab.mp4,1550,900,1.72222,620,360
+4,assets/media/Interaction of vortex ring with polydisperse droplets.mp4,1280,1000,1.28,461,360
+5,assets/media/Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4,1688,1088,1.55147,559,360
+6,assets/media/Vortex ring frame voronoii analysis.mp4,1540,1078,1.42857,514,360
+7,assets/images/kinematic-kernel-thesis-fig-5-8.webp,1126,531,2.12053,650,307
+8,assets/images/tbl-facility.jpg,4420,1957,2.25856,650,288
+9,assets/media/tbl-voronoi.mp4,1500,1054,1.42315,512,360

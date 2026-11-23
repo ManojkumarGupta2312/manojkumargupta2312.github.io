@@ -1,17 +1,16 @@
-QUICK GITHUB UPDATE — NO DELETION REQUIRED
+UPDATE THIS WEBSITE (Windows + GitHub Desktop)
 
-1. Download the new ZIP, right-click, Extract All.
-2. Open the extracted INNER website folder: index.html, assets and files must be together.
-3. Open GitHub Desktop > choose manojkumargupta2312.github.io > Repository > Show in Explorer.
-4. Copy EVERYTHING INSIDE the extracted new website folder. Paste into the GitHub repository folder. Choose "Replace the files in the destination".
-5. Do NOT delete .git, .github, CNAME or .nojekyll. Leave other old files alone for now.
-6. GitHub Desktop > Changes > Summary: Website visual redesign > Commit to main > Push origin.
-7. After publishing, open https://manojkumargupta2312.github.io/ and refresh with Ctrl+Shift+R.
+1. Extract ZIP and open the folder containing index.html.
+2. GitHub Desktop > Repository > Show in Explorer.
+3. Copy all items INSIDE the extracted folder into the GitHub repository folder.
+4. Choose Replace for files with the same name; NEVER delete .git, .github or CNAME.
+5. Double-click index.html locally: verify portrait and research media proportions.
+6. Return to GitHub Desktop > Commit to main > Push origin.
+7. Refresh https://manojkumargupta2312.github.io/ with Ctrl + Shift + R after publication.
 
-TO UPDATE JUST THREE MEDIA FILES (INSIDE THE WEBSITE FOLDER):
-Photo: assets/images/profile-photo.jpg
-TBL photo: assets/images/tbl-facility.jpg
+REPLACE MEDIA LATER (KEEP EXACT NAMES)
+Portrait: assets/images/profile-photo.jpg
+TBL photograph: assets/images/tbl-facility.jpg
 TBL video: assets/media/tbl-voronoi.mp4
-Optional TBL video poster: assets/images/tbl-video-poster.jpg
 
-Use exact names and actual JPEG/MP4 formats. The research cards include an "Expand image" control for full-sized images; videos have native fullscreen controls.
+All aspect ratios are preserved; the gallery automatically adapts to replacements.

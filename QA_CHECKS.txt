@@ -1,16 +1,18 @@
-VISUAL REDESIGN QA — 23 NOVEMBER 2026
+FINAL QUALITY CHECK — 24 NOVEMBER 2026
 
-Source: last uploaded portfolio website archive, with original experimental media retained.
-Research sections: 9; MP4s displayed: 5; original media filenames preserved where used.
-Research card media: limited to 250 px desktop height at normal widescreen; entire plots are contained, not cropped.
-Responsive browser layout checked at widths 320, 375, 768, 1024, 1366 and 1920 pixels.
-Horizontal overflow: zero at all six widths.
-Broken on-screen images: zero at all six widths.
-JavaScript page errors: zero in six responsive checks.
-Interactions checked: mobile menu open/close; still-image viewer open/close.
-URL references: all local HTML links and source/poster assets resolve to existing files.
-Scientific notes: full user-provided APS DFD 2026 abstract retained, with affiliations and funding; near-contact kernel is not described as a measured collision/coalescence rate.
+Scientific narrative: warm-cloud growth bottleneck, experimentally observable droplet redistribution, pairwise relative motion, controlled-to-complex vortex-ring and TBL programme.
+Status: Prime Minister’s Research Fellow (PMRF) at IIT Delhi; PhD thesis submitted July 2026.
+Nine media stages retain exact aspect ratios; larger display constrained by width 650 px and height 360 px.
+Full original photos, MP4 videos and academic PDFs are included; thesis PDF is excluded.
+Local HTML linked assets: no missing files.
+Binary source assets were hashed against preceding release: unchanged.
 
-Rendering was checked using locally embedded resources because Chromium blocks file and loopback page navigation in this environment. The local deployed website has not been accessed. Test MP4 playback on the publicly deployed GitHub Pages website after upload.
+BROWSER LAYOUT VERIFICATION (Chromium with all CSS and media inlined, static preview)
+320 px: overflow=False; JS errors=0; broken images=0; aspect mismatches=0; mobile menu=None
+375 px: overflow=False; JS errors=0; broken images=0; aspect mismatches=0; mobile menu=True
+768 px: overflow=False; JS errors=0; broken images=0; aspect mismatches=0; mobile menu=True
+1024 px: overflow=False; JS errors=0; broken images=0; aspect mismatches=0; mobile menu=None
+1366 px: overflow=False; JS errors=0; broken images=0; aspect mismatches=0; mobile menu=None
+1920 px: overflow=False; JS errors=0; broken images=0; aspect mismatches=0; mobile menu=None
 
-Aspect-ratio edition: Intrinsic source dimensions measured for all 9 research media; CSS fixed heights removed; media-scale containment and width/height attributes set; JS updates geometry on source load; image previews preserve aspect ratio.
+The public GitHub Pages deployment and remote video playback were not tested; verify them after pushing.

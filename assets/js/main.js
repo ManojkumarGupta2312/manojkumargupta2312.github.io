@@ -26,9 +26,9 @@ document.querySelectorAll('.media-stage').forEach(stage => {
     const w = media.tagName === 'VIDEO' ? media.videoWidth : media.naturalWidth;
     const h = media.tagName === 'VIDEO' ? media.videoHeight : media.naturalHeight;
     if (!(w > 0 && h > 0)) return;
-    const maxHeight = 265;
+    const maxHeight = 360;
     stage.style.setProperty('--media-ratio', `${w}/${h}`);
-    stage.style.setProperty('--media-max-width', `${Math.min(495, Math.round(maxHeight * w / h))}px`);
+    stage.style.setProperty('--media-max-width', `${Math.min(650, Math.round(maxHeight * w / h))}px`);
     media.setAttribute('width', w);
     media.setAttribute('height', h);
   };
