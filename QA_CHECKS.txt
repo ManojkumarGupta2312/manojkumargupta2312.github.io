@@ -1,0 +1,14 @@
+VISUAL REDESIGN QA — 23 NOVEMBER 2026
+
+Source: last uploaded portfolio website archive, with original experimental media retained.
+Research sections: 9; MP4s displayed: 5; original media filenames preserved where used.
+Research card media: limited to 250 px desktop height at normal widescreen; entire plots are contained, not cropped.
+Responsive browser layout checked at widths 320, 375, 768, 1024, 1366 and 1920 pixels.
+Horizontal overflow: zero at all six widths.
+Broken on-screen images: zero at all six widths.
+JavaScript page errors: zero in six responsive checks.
+Interactions checked: mobile menu open/close; still-image viewer open/close.
+URL references: all local HTML links and source/poster assets resolve to existing files.
+Scientific notes: full user-provided APS DFD 2026 abstract retained, with affiliations and funding; near-contact kernel is not described as a measured collision/coalescence rate.
+
+Rendering was checked using locally embedded resources because Chromium blocks file and loopback page navigation in this environment. The local deployed website has not been accessed. Test MP4 playback on the publicly deployed GitHub Pages website after upload.
