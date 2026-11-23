@@ -1,0 +1,15 @@
+QUICK UPDATE — MANOJKUMAR GUPTA PORTFOLIO
+
+1. EXTRACT ALL files from the ZIP; do not double-click index.html inside the ZIP.
+2. Open extracted index.html. It should look like PREVIEWS/WEBSITE_1366_HOMEPAGE.png.
+3. GitHub Desktop → Repository → Show in Explorer.
+4. Replace old website files with ALL CONTENTS of this extracted website folder.
+   Keep .git, .github, CNAME and .nojekyll if present.
+5. GitHub Desktop → Commit to main → Push origin.
+6. Visit https://manojkumargupta2312.github.io/ after deployment and Ctrl+Shift+R.
+
+TO CHANGE PHOTOS/VIDEOS: replace these exact files in the repository:
+  assets/images/profile-photo.jpg
+  assets/images/tbl-facility.jpg
+  assets/media/tbl-voronoi.mp4
+Optional poster: assets/images/tbl-video-poster.jpg

@@ -1,0 +1,16 @@
+QUALITY CHECKS — 24 NOVEMBER 2026
+
+Source: user's latest CV-updated academic website folder.
+
+1. Nine research sections unchanged in order. Five original experiment video players included, full scientific-media filenames retained.
+2. Desktop research media 71.2% of combined media/text width at 1366 and 1920 px (excluding grid gap); native aspect ratios preserved, 650 px max visual height.
+3. Changed introduction: readable serif headline and strong, contrasting science-focused copy.
+4. Three clickable science questions all point to the correct research sections.
+5. APS DFD 2026: right-aligned “Abstract +”, full user-provided abstract, authors and funding preserved; click-to-expand tested.
+6. CV unchanged from newly uploaded 2-page PDF; SHA-256 exact match.
+7. Inline CSS fallback exactly equals assets/css/styles.css. Mobile navigation and full image viewer JS preserved.
+8. Seven Chromium width checks (320, 375, 414, 768, 1024, 1366, 1920 px), no horizontal overflow, one-line name, no visible broken research images and no JS errors. Mobile menu and APS disclosure were tested.
+9.  All local URLs, poster images, thesis figure crops, CV and publicly linked conference PDF paths are present.
+10. Full submitted PhD thesis PDF not included.
+
+NOTE: Browser screenshots used the original exact packaged HTML and CSS and base64-inlined image bytes for testing, because this execution environment disallows direct file:// navigation. Local URL paths were separately checked. Playback and external live links should be checked after GitHub Pages deployment.

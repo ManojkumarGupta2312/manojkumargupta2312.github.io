@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://manojkumargupta2312.github.io/sitemap.xml

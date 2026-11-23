@@ -1,19 +1,15 @@
-FINAL ACADEMIC WEBSITE — HOW TO UPDATE (NOVEMBER 2026)
+QUICK UPDATE — MANOJKUMAR GUPTA PORTFOLIO
 
-1. Unzip Manojkumar_Gupta_Academic_Website_Refined_Final.zip.
-2. Open the extracted website folder until index.html and the assets/ and files/ folders are visible.
-3. In GitHub Desktop select repository manojkumargupta2312.github.io (remove the space), then choose Repository > Show in Explorer.
-4. Copy all CONTENTS of the extracted website folder into your local repository folder. Overwrite same-named files.
-5. Do NOT delete .git, .github, CNAME or .nojekyll.
-6. Open index.html from the LOCAL repository folder. Verify fonts, images and card design before committing.
-7. In GitHub Desktop, commit and push to main.
-8. Wait for GitHub Pages to deploy; then reload https://manojkumargupta2312.github.io/ using Ctrl+Shift+R.
+1. EXTRACT ALL files from the ZIP; do not double-click index.html inside the ZIP.
+2. Open extracted index.html. It should look like PREVIEWS/WEBSITE_1366_HOMEPAGE.png.
+3. GitHub Desktop → Repository → Show in Explorer.
+4. Replace old website files with ALL CONTENTS of this extracted website folder.
+   Keep .git, .github, CNAME and .nojekyll if present.
+5. GitHub Desktop → Commit to main → Push origin.
+6. Visit https://manojkumargupta2312.github.io/ after deployment and Ctrl+Shift+R.
 
-TO REPLACE MEDIA:
-Your portrait: assets/images/profile-photo.jpg
-TBL experiment photo: assets/images/tbl-facility.jpg
-TBL Voronoi video: assets/media/tbl-voronoi.mp4
-Replace these with files with the same name and extension. Videos should be MP4/H.264.
-All research media preserve their native aspect ratios. Do not set image heights manually.
-
-No live repository changes were performed during creation of this ZIP.
+TO CHANGE PHOTOS/VIDEOS: replace these exact files in the repository:
+  assets/images/profile-photo.jpg
+  assets/images/tbl-facility.jpg
+  assets/media/tbl-voronoi.mp4
+Optional poster: assets/images/tbl-video-poster.jpg
