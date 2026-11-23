@@ -81,7 +81,7 @@
   "display_sequence": [
     {
       "index": "01",
-      "section": "A laboratory built to ask one question.",
+      "section": "An experimental facility built from the ground up.",
       "active_file": "assets/media/droplet laden vortex flow facility developed at IIT Delhi.png",
       "source_posters": null
     },
@@ -95,25 +95,33 @@
       "index": "03",
       "section": "Looking beyond the vortex shape.",
       "active_file": "assets/media/Vortex ring PIV_analysed into the MAtalb PIVlab.mp4",
-      "source_posters": "assets/images/poster-piv.jpg"
+      "source_posters": "assets/images/poster-piv.jpg",
+      "desktop_display_width_fraction_of_media_column": 0.8,
+      "mobile_display_width_fraction_of_media_column": 1.0
     },
     {
       "index": "04",
       "section": "A single vortex. Many different journeys.",
       "active_file": "assets/media/Interaction of vortex ring with polydisperse droplets.mp4",
-      "source_posters": "assets/images/poster-interaction.jpg"
+      "source_posters": "assets/images/poster-interaction.jpg",
+      "desktop_display_width_fraction_of_media_column": 0.8,
+      "mobile_display_width_fraction_of_media_column": 1.0
     },
     {
       "index": "05",
       "section": "Following a droplet changes the view.",
       "active_file": "assets/media/Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4",
-      "source_posters": "assets/images/poster-tracking.jpg"
+      "source_posters": "assets/images/poster-tracking.jpg",
+      "desktop_display_width_fraction_of_media_column": 0.8,
+      "mobile_display_width_fraction_of_media_column": 1.0
     },
     {
       "index": "06",
       "section": "Patterns hiding in a cloud of points.",
       "active_file": "assets/media/Vortex ring frame voronoii analysis.mp4",
-      "source_posters": "assets/images/poster-voronoi.jpg"
+      "source_posters": "assets/images/poster-voronoi.jpg",
+      "desktop_display_width_fraction_of_media_column": 0.8,
+      "mobile_display_width_fraction_of_media_column": 1.0
     },
     {
       "index": "07",
@@ -139,5 +147,6 @@
     "tbl_facility": "assets/images/tbl-facility.jpg",
     "tbl_video": "assets/media/tbl-voronoi.mp4",
     "tbl_video_poster": "assets/images/tbl-video-poster.jpg"
-  }
+  },
+  "editorial_note": "Standalone laboratory/gallery preview removed to avoid repeating research imagery. Four vortex-ring video players reduced 20% in desktop display width, not transcoded; TBL player unchanged."
 }

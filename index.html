@@ -197,6 +197,73 @@
  .aps-row .abstract-disclosure summary{font-size:12.2px}
 }
 
+/* ================================================================
+   Scientific clarity / wayfinding revision — 24 November 2026
+   ================================================================ */
+/* Roadmap is now the only introductory guide; no duplicate research imagery. */
+.physics-roadmap{padding-top:58px;padding-bottom:59px}
+.roadmap-heading{align-items:center;margin-bottom:24px}
+.roadmap-heading h2{max-width:720px;font-size:clamp(32px,3.1vw,45px);line-height:1.19}
+.roadmap-heading>p{max-width:440px}
+.roadmap-card{min-height:202px}
+/* Distinct, readable chapter markers for navigating the experimental sequence. */
+.chapter-heading,
+.chapter-heading.second-chapter{
+ display:grid;grid-template-columns:125px minmax(0,1.22fr) minmax(210px,.78fr);
+ gap:clamp(19px,2.5vw,36px);align-items:center;
+ padding:22px 27px;margin:29px 0 9px;
+ background:linear-gradient(112deg,#f1f5f4 0%,#fbfcfa 100%);
+ border:1px solid #d9e3e2;border-left:4px solid #af8055;
+ box-shadow:0 2px 6px rgba(19,47,59,.025);
+}
+.chapter-heading.chapter-droplets{border-left-color:#207b85;background:linear-gradient(112deg,#f0f7f6 0%,#fcfdfc 100%)}
+.chapter-heading.chapter-turbulence{border-left-color:#566c9c;background:linear-gradient(112deg,#f2f5f9 0%,#fcfdfd 100%)}
+.chapter-heading .chapter-index{display:flex;flex-direction:column;align-items:flex-start;gap:2px;border-right:1px solid #d6e1e0;padding-right:19px}
+.chapter-heading .chapter-index strong{font:500 30px/1.05 var(--serif);color:#9f7450;letter-spacing:-.05em}
+.chapter-heading.chapter-droplets .chapter-index strong{color:#207b85}
+.chapter-heading.chapter-turbulence .chapter-index strong{color:#566c9c}
+.chapter-heading .chapter-index small{font:790 10.4px/1.5 var(--sans);letter-spacing:.12em;color:#6d7f87}
+.chapter-heading h3{font:500 clamp(20px,2vw,26px)/1.25 var(--serif);color:#203f51;letter-spacing:-.03em}
+.chapter-heading p{justify-self:stretch;max-width:350px;font-size:12px;line-height:1.64;color:#687d87}
+/* Four original vortex-ring recordings: 80% of former display width, no resampling. */
+.story-media.vortex-video-reduced{width:80%;justify-self:center;max-width:100%}
+.story-media.vortex-video-reduced .media-frame video{width:100%;height:auto;object-fit:contain}
+/* More legible and intentionally balanced contact section. */
+.contact-email-list{display:grid;gap:16px;margin-top:23px}
+.contact-email-item{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.contact-email-item .email-type{color:#dcbf9d;font-size:10px;font-weight:760;letter-spacing:.12em}
+.contact-email-item .contact-email{font-size:clamp(18px,2vw,25px);margin-top:0;line-height:1.5;padding-bottom:4px}
+/* APS abstract is immediately below the meeting entry and unobtrusive until opened. */
+.aps-row .abstract-disclosure{margin-top:7px}
+.aps-row .abstract-disclosure summary{margin-left:0;width:max-content;justify-content:flex-start;padding-top:6px}
+.aps-row .abstract-copy{margin-top:13px}
+@media(max-width:1150px){
+ .chapter-heading,.chapter-heading.second-chapter{grid-template-columns:105px minmax(0,1.2fr) minmax(165px,.8fr);padding:18px 20px;gap:20px}
+ .chapter-heading h3{font-size:21px}
+ .chapter-heading p{font-size:11.4px}
+}
+@media(max-width:900px){
+ .chapter-heading,.chapter-heading.second-chapter{grid-template-columns:91px minmax(0,1fr);padding:17px 18px;gap:8px 17px}
+ .chapter-heading h3{font-size:22px}
+ .chapter-heading p{grid-column:2;justify-self:start;max-width:none;font-size:11.8px}
+ .chapter-heading .chapter-index{grid-row:span 2;align-self:stretch;justify-content:center}
+ .roadmap-card{min-height:235px}
+}
+@media(max-width:630px){
+ .physics-roadmap{padding:42px 0 45px}
+ .roadmap-heading h2{font-size:clamp(29px,8vw,37px)}
+ .roadmap-card{min-height:0}
+ .chapter-heading,.chapter-heading.second-chapter{grid-template-columns:69px minmax(0,1fr);padding:14px 13px;gap:7px 13px;margin-top:23px}
+ .chapter-heading .chapter-index{padding-right:10px}
+ .chapter-heading .chapter-index strong{font-size:26px}
+ .chapter-heading .chapter-index small{font-size:8.3px;letter-spacing:.045em}
+ .chapter-heading h3{font-size:20px}
+ .chapter-heading p{font-size:10.8px}
+ /* Playback stays full-width on narrow phones to protect legibility of scientific axes. */
+ .story-media.vortex-video-reduced{width:100%;max-width:100%}
+ .contact-email-item .contact-email{font-size:19px}
+}
+
 </style>
 <title>Manojkumar I. Gupta — Experimental Fluid Mechanics</title>
 </head>
@@ -223,7 +290,6 @@
 <p>I study this <strong>from a controlled vortex ring to a turbulent boundary layer</strong>. High-speed imaging and time-resolved velocimetry reveal the flow and individual droplet trajectories. Voronoï clustering and droplet-pair statistics then connect where droplets gather with how they approach—before we examine sustained turbulent shear.</p>
 </div>
 </div>
-
 <p class="hero-context">Experimental multiphase fluid mechanics<br/>FE2B Fluids Lab · Department of Applied Mechanics · IIT Delhi<br/>PhD thesis submitted, July 2026 · With <a href="https://narsingjha.github.io/" rel="noopener noreferrer" target="_blank">Prof. Narsing Kumar Jha</a></p>
 <div class="hero-actions"><a class="solid-button" href="#research">Explore the experiments <span aria-hidden="true">↗</span></a><a class="underlined-link" href="files/manojkumar-gupta-cv.pdf" rel="noopener noreferrer" target="_blank">Curriculum vitae <span aria-hidden="true">↗</span></a></div>
 <p class="availability">Interested in postdoctoral research, academic appointments and collaborative experiments.</p>
@@ -234,46 +300,40 @@
 <div class="container">
 <div class="roadmap-heading">
 <div>
-<p class="section-eyebrow">THE PHYSICS BEHIND THE EXPERIMENTS</p>
-<h2 id="roadmap-title">A cloud-scale question.<br/><em>A measurable approach.</em></h2>
+<p class="section-eyebrow">FROM CLOUD MICROPHYSICS TO EXPERIMENTAL MEASUREMENTS</p>
+<h2 id="roadmap-title">What controls <em>droplet encounters?</em></h2>
 </div>
-<p>Three connected questions guide the work, from an isolated coherent vortex to the complex flow of a turbulent boundary layer.</p>
+<p>Cloud-droplet growth depends on both spatial organisation and relative motion. These connected questions link the isolated-vortex experiments with droplet dynamics in sustained turbulent shear.</p>
 </div>
 <div class="roadmap-grid">
 <a aria-label="Explore droplet clustering measurements" class="roadmap-card" href="#clustering">
 <span class="roadmap-topic">SPATIAL ORGANISATION</span>
-<h3>Where do droplets <em>gather?</em></h3>
-<p>Vortical motion can create droplet-rich clusters beside depleted regions—even when the original field looks random.</p>
+<h3>Where do droplets <em>accumulate?</em></h3>
+<p>Preferential concentration produces droplet-rich clusters and depleted regions around a moving vortex.</p>
 <span class="roadmap-explore">Explore clustering <span aria-hidden="true">↗</span></span>
 </a>
 <a aria-label="Explore near-contact droplet-pair statistics" class="roadmap-card" href="#pairs">
 <span class="roadmap-topic">RELATIVE MOTION</span>
-<h3>When do they <em>approach?</em></h3>
-<p>Being close is not enough. The motion of neighbouring droplets determines whether an encounter becomes more likely.</p>
+<h3>Which pairs <em>approach?</em></h3>
+<p>Spatial clustering alone does not describe encounters; near-contact relative motion is equally important.</p>
 <span class="roadmap-explore">Explore pair statistics <span aria-hidden="true">↗</span></span>
 </a>
 <a aria-label="Explore turbulent boundary layer droplet clustering" class="roadmap-card" href="#tbl-voronoi">
-<span class="roadmap-topic">SUSTAINED TURBULENCE</span>
-<h3>What persists in <em>shear?</em></h3>
-<p>Moving from one passing vortex to a rough-wall turbulent boundary layer reveals droplet organisation after longer interactions.</p>
+<span class="roadmap-topic">BOUNDARY-LAYER TURBULENCE</span>
+<h3>What persists in <em>turbulent shear?</em></h3>
+<p>An approximately 1 m thick rough-wall boundary layer provides prolonged exposure to mean shear and turbulence.</p>
 <span class="roadmap-explore">Explore turbulent flow <span aria-hidden="true">↗</span></span>
 </a>
 </div>
 </div>
 </section>
-<section aria-labelledby="discover-title" class="discovery container"><div class="discovery-head"><span class="section-eyebrow">A FEW FRAMES FROM THE LAB</span><h2 id="discover-title">See the physics before reading about it<span class="accent-period">.</span></h2></div>
-<div class="discovery-grid">
-<a class="discovery-tile" href="#apparatus"><div class="discovery-image"><img alt="Experimental vortex-ring and droplet apparatus" loading="lazy" src="assets/media/droplet laden vortex flow facility developed at IIT Delhi.png"/></div><div class="discovery-meta"><span>01 · THE BUILD</span><strong>From idea to apparatus <span aria-hidden="true">↗</span></strong></div></a>
-<a class="discovery-tile" href="#interaction"><div class="discovery-image dark-tile"><img alt="Experimental water droplets meeting a vortex ring" loading="lazy" src="assets/images/poster-interaction.jpg"/></div><div class="discovery-meta"><span>02 · THE ENCOUNTER</span><strong>Droplets in motion <span aria-hidden="true">↗</span></strong></div></a>
-<a class="discovery-tile" href="#clustering"><div class="discovery-image"><img alt="Voronoï classification of droplet clusters and voids" loading="lazy" src="assets/images/poster-voronoi.jpg"/></div><div class="discovery-meta"><span>03 · THE PATTERN</span><strong>Order in the disorder <span aria-hidden="true">↗</span></strong></div></a>
-</div>
-</section>
+
 <section class="research" id="research"><div class="container"><div class="section-head"><div><p class="section-eyebrow">RESEARCH IN MOTION</p><h2>Inside the experiments<span class="accent-period">.</span></h2></div><p>Original high-speed recordings and analysis from my PhD research. Short explanations, real measurements—and more questions worth exploring.</p></div>
-<div class="chapter-heading"><span>01 / EXPERIMENT</span><h3>Build a vortex. Measure its flow.</h3><p>Controlled vortical structures make it possible to investigate droplet response one mechanism at a time.</p></div>
+<div class="chapter-heading chapter-vortex"><span class="chapter-index"><strong>01</strong><small>EXPERIMENT</small></span><h3>Build a vortex. Measure its flow.</h3><p>An isolated vortex reveals the carrier-flow scales before droplet interactions are introduced.</p></div>
 <article class="story-row" id="apparatus">
 <figure class="story-media image-media"><div class="media-frame"><img alt="Annotated photograph of the custom vortex-ring and droplet experimental arrangement" decoding="async" loading="lazy" src="assets/media/droplet laden vortex flow facility developed at IIT Delhi.png"/></div><figcaption>Vortex-ring–droplet experimental facility, IIT Delhi.</figcaption></figure>
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">01 <span class="kicker-rule"></span> EXPERIMENT DESIGN</span>
-<h3>A laboratory built to ask one question.</h3><p>Together with Prof. Narsing Kumar Jha and the laboratory team, I helped develop the vortex-ring–droplet experiment at IIT Delhi—from material selection and fabrication to alignment, calibration and high-speed measurements.</p></div>
+<h3>An experimental facility built from the ground up.</h3><p>Together with Prof. Narsing Kumar Jha and the laboratory team, I helped develop the custom vortex-ring–droplet experimental facility at IIT Delhi—from material selection and fabrication to optical alignment, calibration and high-speed measurements.</p></div>
 </div></article>
 <article class="story-row" id="visualisation">
 <figure class="story-media image-media"><div class="media-frame"><img alt="High-speed fog-seeded vortex-ring propagation sequence" decoding="async" loading="lazy" src="assets/media/Snapshots showing the propogation of the vortex ring.jpg"/></div><figcaption>Successive experimental images of vortex-ring propagation.</figcaption></figure>
@@ -281,23 +341,23 @@
 <h3>First, make the invisible visible.</h3><p>Fog-seeded images bring a travelling vortex ring into view and expose the evolving structure of the flow. Its motion is simple to generate, but the particle response is not.</p></div>
 </div></article>
 <article class="story-row" id="characterisation">
-<figure class="story-media video-media"><div class="media-frame"><video aria-label="Particle image velocimetry video showing vortex-ring velocity vectors and vorticity" controls="" playsinline="" poster="assets/images/poster-piv.jpg" preload="metadata"><source src="assets/media/Vortex ring PIV_analysed into the MAtalb PIVlab.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Experimental PIV velocity and vorticity fields.</figcaption></figure>
+<figure class="story-media video-media vortex-video-reduced"><div class="media-frame"><video aria-label="Particle image velocimetry video showing vortex-ring velocity vectors and vorticity" controls="" playsinline="" poster="assets/images/poster-piv.jpg" preload="metadata"><source src="assets/media/Vortex ring PIV_analysed into the MAtalb PIVlab.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Experimental PIV velocity and vorticity fields.</figcaption></figure>
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">03 <span class="kicker-rule"></span> FLOW CHARACTERISATION</span>
 <h3>Looking beyond the vortex shape.</h3><p>Time-resolved particle image velocimetry connects the visible structure with velocity, vorticity, circulation and vortex-core scales—the quantities that govern the ensuing droplet interaction.</p></div>
 </div></article>
 <article class="story-row" id="interaction">
-<figure class="story-media video-media"><div class="media-frame"><video aria-label="High-speed experimental movie of polydisperse water droplets encountering a vortex ring" controls="" playsinline="" poster="assets/images/poster-interaction.jpg" preload="metadata"><source src="assets/media/Interaction of vortex ring with polydisperse droplets.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Original high-speed vortex–droplet interaction footage.</figcaption></figure>
+<figure class="story-media video-media vortex-video-reduced"><div class="media-frame"><video aria-label="High-speed experimental movie of polydisperse water droplets encountering a vortex ring" controls="" playsinline="" poster="assets/images/poster-interaction.jpg" preload="metadata"><source src="assets/media/Interaction of vortex ring with polydisperse droplets.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Original high-speed vortex–droplet interaction footage.</figcaption></figure>
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">04 <span class="kicker-rule"></span> DROPLET–VORTEX INTERACTION</span>
 <h3>A single vortex. Many different journeys.</h3><p>Watch how polydisperse droplets respond as a ring passes through. Near-core deflection, fly-by motion and comparatively weak far-field encounters emerge from the same coherent flow.</p></div>
 </div></article>
-<div class="chapter-heading second-chapter"><span>02 / INTERACTION</span><h3>Follow the droplets.</h3><p>From individual paths to preferential concentration and near-contact pair motion.</p></div>
+<div class="chapter-heading second-chapter chapter-droplets"><span class="chapter-index"><strong>02</strong><small>INTERACTION</small></span><h3>Follow the droplets.</h3><p>From individual trajectories to clusters, voids and near-contact pair dynamics.</p></div>
 <article class="story-row" id="tracking">
-<figure class="story-media video-media"><div class="media-frame"><video aria-label="MATLAB reconstruction of droplet trajectories in relation to the vortex" controls="" playsinline="" poster="assets/images/poster-tracking.jpg" preload="metadata"><source src="assets/media/Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Measured trajectories and vortex-frame reconstruction.</figcaption></figure>
+<figure class="story-media video-media vortex-video-reduced"><div class="media-frame"><video aria-label="MATLAB reconstruction of droplet trajectories in relation to the vortex" controls="" playsinline="" poster="assets/images/poster-tracking.jpg" preload="metadata"><source src="assets/media/Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Measured trajectories and vortex-frame reconstruction.</figcaption></figure>
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">05 <span class="kicker-rule"></span> LAGRANGIAN DYNAMICS</span>
 <h3>Following a droplet changes the view.</h3><p>In the translating vortex frame of reference, tracking reveals how each droplet moves relative to the coherent structure—not just across the laboratory image.</p></div>
 </div></article>
 <article class="story-row" id="clustering">
-<figure class="story-media video-media"><div class="media-frame"><video aria-label="Experimental vortex-frame droplet Voronoï tessellation movie" controls="" playsinline="" poster="assets/images/poster-voronoi.jpg" preload="metadata"><source src="assets/media/Vortex ring frame voronoii analysis.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Voronoï classification of droplets in the vortex frame.</figcaption></figure>
+<figure class="story-media video-media vortex-video-reduced"><div class="media-frame"><video aria-label="Experimental vortex-frame droplet Voronoï tessellation movie" controls="" playsinline="" poster="assets/images/poster-voronoi.jpg" preload="metadata"><source src="assets/media/Vortex ring frame voronoii analysis.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Voronoï classification of droplets in the vortex frame.</figcaption></figure>
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">06 <span class="kicker-rule"></span> PREFERENTIAL CONCENTRATION</span>
 <h3>Patterns hiding in a cloud of points.</h3><p>Voronoï tessellation exposes droplet-rich clusters and depleted voids. Their locations change across and around the moving vortex, revealing more than an average concentration can.</p></div>
 </div></article>
@@ -306,11 +366,11 @@
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">07 <span class="kicker-rule"></span> PAIR DYNAMICS</span>
 <h3>Closer together—but moving towards each other?</h3><p>Clustering is not enough to establish encounters. Pair concentration and radial relative velocity are combined to estimate kinematic near-contact kernels, while keeping physical collision and coalescence distinct.</p></div>
 </div></article>
-<div class="chapter-heading second-chapter"><span>03 / TURBULENCE</span><h3>Bring the question into shear turbulence.</h3><p>A rough-wall boundary layer adds sustained turbulent motion and interaction history.</p></div>
+<div class="chapter-heading second-chapter chapter-turbulence"><span class="chapter-index"><strong>03</strong><small>TURBULENCE</small></span><h3>Bring the question into shear turbulence.</h3><p>Controlled, ABL-like shear turbulence introduces a longer interaction history.</p></div>
 <article class="story-row" id="tbl-facility">
 <figure class="story-media image-media"><div class="media-frame"><img alt="Photographs of the rough-wall turbulent-boundary-layer wind tunnel and illuminated test section" decoding="async" loading="lazy" src="assets/images/tbl-facility.jpg"/></div><figcaption>Wind-tunnel facility and illuminated turbulent-boundary-layer experiment.</figcaption></figure>
 <div class="story-copy"><div class="story-copy-inner"><span class="story-kicker">08 <span class="kicker-rule"></span> TURBULENT BOUNDARY LAYER</span>
-<h3>Then, the experiment gets more complex.</h3><p>In a rough-wall wind tunnel, the droplets encounter sustained shear and turbulent motion instead of one isolated vortex. The flow is a controlled atmospheric-boundary-layer-like analogue, not an atmospheric replica.</p></div>
+<h3>Then, the experiment gets more complex.</h3><p>The rough-wall wind-tunnel facility produced an approximately 1 m thick turbulent boundary layer. It let us study droplet dynamics after sustained exposure to shear and turbulent fluctuations—an atmospheric-boundary-layer-like experiment, not a complete simulation of clouds.</p></div>
 </div></article>
 <article class="story-row" id="tbl-voronoi">
 <figure class="story-media video-media"><div class="media-frame"><video aria-label="Voronoï analysis of the droplet field in a rough-wall turbulent boundary layer" controls="" playsinline="" poster="assets/images/tbl-video-poster.jpg" preload="metadata"><source src="assets/media/tbl-voronoi.mp4" type="video/mp4"/>Your browser does not support MP4 video playback.</video></div><figcaption>Time-resolved TBL droplet Voronoï analysis.</figcaption></figure>
@@ -319,19 +379,22 @@
 </div></article>
 <div class="closing-science"><span class="science-mark">“</span><p>Clustering tells us where droplets are. Relative motion tells us what might happen when they meet.</p><span class="science-credit">A central distinction in the research</span></div>
 </div></section>
-<section aria-labelledby="approach-title" class="approach" id="approach"><div class="container approach-grid"><div class="approach-narrative"><p class="section-eyebrow">BEHIND THE MEASUREMENTS</p><h2 id="approach-title">I enjoy building the experiment as much as understanding the result<span class="accent-period">.</span></h2><p>My doctoral research grew alongside the experimental capability at the FE2B Fluids Lab. Working with Prof. Jha and the laboratory team, I contributed to selecting materials, developing and fabricating the apparatus, calibrating the optics, and building reproducible analysis workflows.</p><p>The work brings together careful experimental design and physical interpretation—from the motion of one droplet to the statistics of a dispersed population.</p><a class="underlined-link" href="#contact">Talk about a collaboration <span aria-hidden="true">↗</span></a></div>
+<section aria-labelledby="approach-title" class="approach" id="approach"><div class="container approach-grid"><div class="approach-narrative"><p class="section-eyebrow">BEHIND THE MEASUREMENTS</p><h2 id="approach-title">I enjoy building the experiment as much as understanding the result<span class="accent-period">.</span></h2><p>My doctoral work developed alongside experimental capabilities at the FE2B Fluids Lab. With Prof. Jha and the laboratory team, I contributed to the design and fabrication of the vortex-ring–droplet facility, optical calibration, high-speed imaging and reproducible MATLAB analysis.</p><p>The work brings together careful experimental design and physical interpretation—from the motion of one droplet to the statistics of a dispersed population.</p><a class="underlined-link" href="#contact">Talk about a collaboration <span aria-hidden="true">↗</span></a></div>
 <div aria-label="Experimental and analysis experience" class="method-list"><div class="method"><span>01</span><div><h3>Design &amp; build</h3><p>Apparatus development, fabrication planning, wind-tunnel arrangements and uncertainty-aware calibration.</p></div></div><div class="method"><span>02</span><div><h3>Observe &amp; measure</h3><p>High-speed imaging, shadowgraphy, laser-sheet visualisation, time-resolved PIV and droplet tracking.</p></div></div><div class="method"><span>03</span><div><h3>Analyse &amp; interpret</h3><p>MATLAB image processing, Lagrangian statistics, Voronoï methods, pair dynamics and turbulence diagnostics.</p></div></div></div>
 </div></section>
 <section aria-labelledby="academics-title" class="academics container"><div class="academics-grid"><div><p class="section-eyebrow">ACADEMIC BACKGROUND</p><h2 id="academics-title">A researcher by training. An experimentalist by practice.</h2></div><div class="education"><div><span>2021–2026</span><p><strong>PhD research · Applied Mechanics</strong>Indian Institute of Technology Delhi · thesis submitted July 2026</p></div><div><span>Prior</span><p><strong>BTech · Mechanical Engineering</strong>Charotar University of Science and Technology, Gujarat</p></div></div></div></section>
 <section aria-labelledby="publication-title" class="publications" id="publications"><div class="container"><div class="section-head publications-head"><div><p class="section-eyebrow">SCIENTIFIC OUTPUTS</p><h2 id="publication-title">Selected publications &amp; presentations<span class="accent-period">.</span></h2></div><p>Representative academic work. The full submitted conference abstract is available for those who want the details.</p></div>
 <div class="pub-row"><div class="pub-label">2026 <span>JOURNAL</span></div><div class="pub-content"><h3>Interaction of a bubble with vortical structures in a horizontal turbulent channel flow</h3><p>Narsing Kumar Jha, Manojkumar I. Gupta and Raghuraman N. Govardhan · <em>Physics of Fluids</em> 38(1)</p><a href="https://doi.org/10.1063/5.0309012" rel="noopener noreferrer" target="_blank">View paper <span aria-hidden="true">↗</span></a></div></div>
-<div class="pub-row aps-row"><div class="pub-label">2026 <span>APS DFD</span></div><div class="pub-content"><h3>Vortex-ring-induced clustering and collision enhancement of polydisperse droplets</h3><p><strong>Oral presentation · 24 November 2026 (scheduled)</strong> · 79th APS Division of Fluid Dynamics Annual Meeting (22–24 November 2026), Orange County Convention Center, Orlando, Florida, USA</p><p>Session: Particle-Laden Flows: Collision and Aggregation</p><details class="abstract-disclosure"><summary>Abstract <span aria-hidden="true">+</span></summary><div class="abstract-copy"><p>Cloud droplet growth in warm clouds depends not only on condensation, but also on how droplet inertia and vortical structures organize droplets and promote collisions. To examine this process in a controlled setting, we study polydisperse droplets interacting with an isolated air vortex ring, used as an idealized vortical structure in turbulent clouds. High-speed imaging and particle tracking velocimetry is used to track the droplets in the vortex frame. Their spatial arrangement is quantified using Voronoi tessellation and radial and angular distribution functions, while size- and Stokes-number-resolved relative-velocity statistics describe droplet-pair motion. The measurements reveal a strongly nonuniform droplet field: droplets are depleted from the vortex-core region and accumulate in annular, asymmetric zones around the ring. These inhomogeneities coincide with enhanced radial relative velocities for selected droplet pairs, leading to increased kinematic collision kernels compared with a spatially uniform field. Event-based dynamic collision counts examine how clustering and relative motion contribute to collision efficiency. The results provide a controlled experimental link between vortical transport, preferential concentration, and droplet-collision enhancement relevant to cloud microphysics.</p><p><strong>Authors and affiliations:</strong> Gupta Manojkumar Ishwarchandra (Indian Institute of Technology Delhi); Narsing Jha (Department of Applied Mechanics, Indian Institute of Technology Delhi, India).</p><p><strong>Funding:</strong> This work was supported by the Prime Minister's Research Fellowship (PMRF) and the Anusandhan National Research Foundation (ANRF), Government of India.</p></div></details></div></div>
+<div class="pub-row aps-row"><div class="pub-label">2026 <span>APS DFD</span></div><div class="pub-content"><h3>Vortex-ring-induced clustering and collision enhancement of polydisperse droplets</h3><p><strong>Oral presentation · 24 November 2026 (scheduled)</strong> · 79th APS Division of Fluid Dynamics Annual Meeting (22–24 November 2026), Orange County Convention Center, Orlando, Florida, USA</p><p>Session: Particle-Laden Flows: Collision and Aggregation</p><details class="abstract-disclosure"><summary>Abstract<span aria-hidden="true">+</span></summary><div class="abstract-copy"><p>Cloud droplet growth in warm clouds depends not only on condensation, but also on how droplet inertia and vortical structures organize droplets and promote collisions. To examine this process in a controlled setting, we study polydisperse droplets interacting with an isolated air vortex ring, used as an idealized vortical structure in turbulent clouds. High-speed imaging and particle tracking velocimetry is used to track the droplets in the vortex frame. Their spatial arrangement is quantified using Voronoi tessellation and radial and angular distribution functions, while size- and Stokes-number-resolved relative-velocity statistics describe droplet-pair motion. The measurements reveal a strongly nonuniform droplet field: droplets are depleted from the vortex-core region and accumulate in annular, asymmetric zones around the ring. These inhomogeneities coincide with enhanced radial relative velocities for selected droplet pairs, leading to increased kinematic collision kernels compared with a spatially uniform field. Event-based dynamic collision counts examine how clustering and relative motion contribute to collision efficiency. The results provide a controlled experimental link between vortical transport, preferential concentration, and droplet-collision enhancement relevant to cloud microphysics.</p><p><strong>Authors and affiliations:</strong> Gupta Manojkumar Ishwarchandra (Indian Institute of Technology Delhi); Narsing Jha (Department of Applied Mechanics, Indian Institute of Technology Delhi, India).</p><p><strong>Funding:</strong> This work was supported by the Prime Minister's Research Fellowship (PMRF) and the Anusandhan National Research Foundation (ANRF), Government of India.</p></div></details></div></div>
 <div class="pub-row pub-compact"><div class="pub-label">2026 <span>POSTER</span></div><div class="pub-content"><h3>PMRF Annual Symposium · IIT Guwahati</h3><p>6–7 March 2026</p><a href="files/pmrf-2026-poster.pdf" rel="noopener noreferrer" target="_blank">View poster ↗</a></div></div>
 <div class="pub-row pub-compact"><div class="pub-label">2025 <span>CONFERENCE</span></div><div class="pub-content"><h3>Fluid Mechanics and Fluid Power (FMFP 2025) · Nirma University</h3><p>19–21 December 2025</p><a href="files/fmfp2025-extended-abstract.pdf" rel="noopener noreferrer" target="_blank">Extended abstract ↗</a></div></div>
 <div class="pub-row pub-compact"><div class="pub-label">2025 <span>CONFERENCE</span></div><div class="pub-content"><h3>2nd European Fluid Dynamics Conference · Dublin</h3><p>26–29 August 2025</p><a href="files/efdc2-abstract.pdf" rel="noopener noreferrer" target="_blank">View abstract ↗</a></div></div>
 </div></section>
-<section class="outside-lab"><div class="container outside-grid"><div><p class="section-eyebrow">ADDITIONAL EXPERIENCE</p><h2>Beyond the vortex ring<span class="accent-period">.</span></h2></div><div><p><strong>Teaching</strong> — Assistance with fluid mechanics, thermodynamics, engineering mechanics and laboratory courses at IIT Delhi; PMRF teaching engagements in physics and mechanical engineering.</p><p><strong>Applied research</strong> — Wind-tunnel work on aeroelastic chimney wind loads for Ukai Thermal Power Station, with Prof. S. V. Veeravalli and Prof. Jha.</p><p><strong>Research support</strong> — Prime Minister’s Research Fellowship, with project support acknowledged from SERB (now ANRF) and IIT Delhi.</p></div></div></section>
-<section aria-labelledby="contact-title" class="contact" id="contact"><div class="container contact-grid"><div><p class="section-eyebrow">A CONVERSATION IS A GOOD PLACE TO START</p><h2 id="contact-title">What should we explore next?</h2><p>I welcome research discussions, postdoctoral opportunities and collaborations in experimental multiphase flows, coherent vortices, particle-laden turbulence and optical diagnostics.</p><a class="contact-email" href="mailto:amz218301@am.iitd.ac.in">amz218301@am.iitd.ac.in <span aria-hidden="true">↗</span></a></div><div class="contact-details"><span class="detail-title">FE2B FLUIDS LAB</span><address>Room 133, Fluid Mechanics Laboratory<br/>Department of Applied Mechanics<br/>Indian Institute of Technology Delhi<br/>New Delhi 110016, India</address><span class="detail-title">PROFESSIONAL LINKS</span><div class="socials"><a href="https://scholar.google.com/citations?user=jcx9DrMAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a><a href="https://orcid.org/0009-0002-3814-1960" rel="noopener noreferrer" target="_blank">ORCID ↗</a><a href="https://www.linkedin.com/in/manojkumar-gupta-09975a247/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="https://narsingjha.github.io/" rel="noopener noreferrer" target="_blank">FE2B Fluids Lab ↗</a></div></div></div></section>
+<section class="outside-lab"><div class="container outside-grid"><div><p class="section-eyebrow">ADDITIONAL EXPERIENCE</p><h2>Experimental fluid mechanics, beyond one flow. <span class="accent-period"></span></h2></div><div><p><strong>Teaching</strong> — Assistance with fluid mechanics, thermodynamics, engineering mechanics and laboratory courses at IIT Delhi; PMRF teaching engagements in physics and mechanical engineering.</p><p><strong>Applied research</strong> — Wind-tunnel work on aeroelastic chimney wind loads for Ukai Thermal Power Station, with Prof. S. V. Veeravalli and Prof. Jha.</p><p><strong>Research support</strong> — Prime Minister’s Research Fellowship, with project support acknowledged from SERB (now ANRF) and IIT Delhi.</p></div></div></section>
+<section aria-labelledby="contact-title" class="contact" id="contact"><div class="container contact-grid"><div><p class="section-eyebrow">A CONVERSATION IS A GOOD PLACE TO START</p><h2 id="contact-title">What should we explore next?</h2><p>I welcome research discussions, postdoctoral opportunities and collaborations in experimental multiphase flows, coherent vortices, particle-laden turbulence and optical diagnostics.</p><div aria-label="Email contacts" class="contact-email-list">
+<div class="contact-email-item"><span class="email-type">IIT DELHI EMAIL</span><a class="contact-email" href="mailto:amz218301@am.iitd.ac.in">amz218301@am.iitd.ac.in <span aria-hidden="true">↗</span></a></div>
+<div class="contact-email-item"><span class="email-type">RESEARCH CORRESPONDENCE</span><a class="contact-email" href="mailto:mgresearch12@gmail.com">mgresearch12@gmail.com <span aria-hidden="true">↗</span></a></div>
+</div></div><div class="contact-details"><span class="detail-title">FE2B FLUIDS LAB</span><address>Room 133, Fluid Mechanics Laboratory<br/>Department of Applied Mechanics<br/>Indian Institute of Technology Delhi<br/>New Delhi 110016, India</address><span class="detail-title">PROFESSIONAL LINKS</span><div class="socials"><a href="https://scholar.google.com/citations?user=jcx9DrMAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a><a href="https://orcid.org/0009-0002-3814-1960" rel="noopener noreferrer" target="_blank">ORCID ↗</a><a href="https://www.linkedin.com/in/manojkumar-gupta-09975a247/" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a><a href="https://narsingjha.github.io/" rel="noopener noreferrer" target="_blank">FE2B Fluids Lab ↗</a></div></div></div></section>
 </main>
 <footer class="site-footer"><div class="container footer-grid"><span>© <span id="copyright-year">2026</span> Manojkumar I. Gupta</span><span>Experimental fluid mechanics · IIT Delhi</span><a href="#top">Back to top ↑</a></div></footer>
 <dialog aria-label="View research image" class="image-viewer" id="image-viewer"><button aria-label="Close image viewer" class="viewer-close" type="button">Close ×</button><img alt="" src=""/><p class="viewer-caption"></p></dialog>
