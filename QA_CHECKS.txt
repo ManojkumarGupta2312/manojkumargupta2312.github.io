@@ -1,0 +1,13 @@
+PORTFOLIO WEBSITE QUALITY CHECKS (23 November 2026)
+- Source: user-supplied APS DFD 2026 Updated (2).zip
+- Rebuilt one-page portfolio with nine research steps; media left and text right on desktop
+- Five embedded local MP4 files are present; H.264 confirmed with ffprobe
+- Nine research entries and five native HTML5 players found
+- Local HTML references checked; no missing files
+- Responsive browser-layout screenshots produced at 320, 375, 414, 768, 1024, 1366, 1920 px using Chromium with assets inlined for testing
+- No horizontal overflow, JavaScript errors, or broken visible image assets in layout tests
+- Mobile navigation open/close and APS abstract disclosure tested
+- User-supplied APS abstract and funding acknowledgement preserved
+- Submitted thesis PDF excluded
+- Deployed GitHub Pages external links and live video playback require final check after push
+- Chromium's local navigation was restricted in the build environment; layout tests used inline render rather than a live HTTP navigation

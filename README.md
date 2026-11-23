@@ -1,93 +1,63 @@
-# Manojkumar I. Gupta — revised academic website
+# Manojkumar I. Gupta — Academic Research Portfolio
 
-This is a complete, framework-free static website prepared for the GitHub Pages repository:
+Complete static GitHub Pages website, redesigned from the user-provided November 2026 website bundle. No build step or subscription needed.
 
-`https://github.com/ManojkumarGupta2312/manojkumargupta2312.github.io`
+## What changed
+- A visual **research portfolio**, rather than a thesis- or presentation-style website.
+- The portrait sits at the top of the introductory hero. The name has no trailing period and stays on one line on supported screen widths.
+- The research order is preserved: facility → fog visualisation → PIV → interaction → tracking → vortex Voronoï → near-contact kernel → TBL facility → TBL Voronoï.
+- Each research item keeps original image/video on the **left (~67%)** and concise, vertically-centred commentary on the **right (~33%)**, then media-above-text on phones.
+- The personally developed apparatus/laboratory capabilities are recognised without claiming sole credit for an entire institutional lab.
+- Journal article, APS DFD 2026 and other conference records remain. The complete **user-supplied APS abstract and acknowledgements** are preserved in an expandable section for interested visitors.
+- The site intentionally does not publish the PhD thesis PDF. The kinematic kernel is not called a measured physical coalescence rate.
+- The TBL facility photograph and editable TBL video from the supplied ZIP are retained.
 
-**This ZIP contains the website files, not a parent folder that should be deployed.** Upload the **contents** of the extracted website folder into the root of your repository.
+## Edit three media files (before uploading)
+Do not edit HTML. In the extracted website directory, replace:
 
-## 1. Three files you can replace later — no HTML editing
-
-| What you want to update | Open this folder | Replace this exact file |
+| Change | Replace exact file | Format |
 |---|---|---|
-| Your photograph | `assets/images/` | `profile-photo.jpg` |
-| TBL facility photograph/figure | `assets/images/` | `tbl-facility.jpg` |
-| TBL Voronoï video | `assets/media/` | `tbl-voronoi.mp4` |
+| Your portrait | `assets/images/profile-photo.jpg` | JPEG |
+| TBL facility photograph | `assets/images/tbl-facility.jpg` | JPEG |
+| TBL Voronoï recording | `assets/media/tbl-voronoi.mp4` | MP4, H.264 video recommended |
 
-**How to replace a photo:** Open the new photo in Windows **Paint** → **File → Save as → JPEG picture** → give it the exact name `profile-photo.jpg` or `tbl-facility.jpg` → save it into the matching folder → click **Replace the file in the destination**. A clear portrait-oriented picture works best for the profile; the TBL image can be any aspect ratio. The site will fit it without cropping research diagrams, legends or axis labels.
+Optional: replace `assets/images/tbl-video-poster.jpg` with a video still frame (same JPEG filename). If you change a video and keep the old poster, it may show a different example until playback begins. Use exact filenames; Windows may hide filename extensions by default (Explorer → View → Show → File name extensions).
 
-**How to replace the TBL video:** Your new video needs to be MP4 (preferably H.264/AAC for broad browser support). Rename it exactly `tbl-voronoi.mp4`, copy it into `assets/media`, and approve **Replace**. Do not merely change the extension of a non-MP4 video; export it to MP4 first. The site keeps a poster in `assets/images/tbl-video-poster.jpg`. If desired, replace that JPEG with a suitable still frame from the new video.
+The original user-supplied TBL recording remains separately archived under its original long filename for provenance. Only `tbl-voronoi.mp4` is linked from the website.
 
-**After replacing any file:** Commit and push using GitHub Desktop as in section 3 below. If the previous image still appears online, press **Ctrl + Shift + R** to bypass the browser cache.
+## Update the existing GitHub Pages repository using GitHub Desktop (Windows)
 
-The original experiment videos remain in `assets/media` under their *exact original filenames*. The easy-to-replace `tbl-voronoi.mp4` is an additional working copy of the supplied TBL recording, so its original filename remains preserved for provenance.
+1. Download and **extract** the final ZIP. Open the extracted inner website folder; confirm `index.html`, `assets`, `files` are together.
+2. In GitHub Desktop choose repository **manojkumargupta2312.github.io**. Select **Repository → Show in Explorer** to open the *local repository folder*.
+3. **Recommended backup**: in GitHub Desktop check the current commit history or copy the old directory to another folder. Even if you did not make a backup, committed old versions are recoverable from Git history.
+4. From the repository root, remove obsolete site content that the new bundle replaces: old `index.html`, `assets`, `files`, `media-config.json`, `MEDIA_MAPPING.csv`, `README.md`, `START_HERE_UPDATE_WEBSITE.txt` if present. **Never delete** `.git`, `.github`, `CNAME`, `.nojekyll`, other GitHub configuration, or custom-domain configuration.
+5. **Copy the contents** of the extracted new website folder (not the outer folder, and not the ZIP) to that repository root. `index.html` must sit directly beside the `assets` and `files` folders.
+6. If desired, replace the three media files described above inside that repository folder.
+7. Return to GitHub Desktop → **Changes**. A long list of changed/deleted/added files is normal. Enter commit message `Redesign academic research portfolio`, click **Commit to main**, then **Push origin**.
+8. Open `https://github.com/ManojkumarGupta2312/manojkumargupta2312.github.io/actions` and look for a successful Pages deploy. If Pages does not deploy, check **Settings → Pages** for `Deploy from a branch`, branch `main`, folder `/(root)` (unless a different working setup is already in place).
+9. Open `https://manojkumargupta2312.github.io/` and use **Ctrl+Shift+R** once deployment finishes. Test the portrait, selected research videos, TBL media, CV, DOI and APS abstract expansion.
 
-## 2. Preview on Windows
+Never publish the ZIP itself as the website. For GitHub Desktop, GitHub's **100 MB per-file** limit is more relevant than the total ZIP size; individual source video files in this bundle are below that limit.
 
-1. Right-click the ZIP and select **Extract All**.
-2. Open the extracted folder and double-click `index.html`.
-3. Test navigation and each video. Some file-based browser restrictions may limit playback; you can preview via a local web server or after deployment.
+## Folder structure
 
-## 3. Update your existing GitHub Pages website
+```
+index.html                       Website content
+assets/css/styles.css            Styling and responsive layout
+assets/js/main.js                Mobile menu and single-video playback
+assets/images/                   Portrait, TBL photo, posters, research figures
+assets/media/                    Original recordings and facility media
+files/                           CV and public conference PDFs
+media-config.json                Original media filenames and sections
+MEDIA_MAPPING.csv                Media filenames and placements
+START_HERE_UPDATE_WEBSITE.txt    Short Windows upload guide
+```
 
-**Method: GitHub Desktop (recommended, because video files exceed the GitHub browser's comfortable upload limits).**
+## Modifying text
+Use VS Code to edit `index.html`. Scientific content is written as short, editable passages. The full APS abstract is nested in an HTML `<details>` block and is hidden by default until a visitor clicks "Read conference abstract".
 
-1. Make a backup of your old site: visit the repository, click **Code → Download ZIP** and save that backup separately.
-2. Open **GitHub Desktop** and sign in.
-3. Select **File → Clone repository** and choose `ManojkumarGupta2312/manojkumargupta2312.github.io`. If already cloned, choose it from the repository list instead.
-4. In GitHub Desktop click **Repository → Show in Explorer**. This opens the local website repository folder.
-5. In that folder, delete the old website's `index.html`, `assets` and `files` if present. You may replace old `README.md` and `MEDIA_MAPPING.csv` too.
-6. **Do not delete** `.git`, `.github`, `CNAME` or `.nojekyll` (if present), or any unrelated custom-domain/deployment files you still use.
-7. Open the **new extracted website folder**. Press **Ctrl + A** to select *everything inside it*, **Ctrl + C**, then paste into the GitHub repository folder using **Ctrl + V**. Do not paste the ZIP as a file, or add an extra nested folder around `index.html`.
-8. In GitHub Desktop, write a summary such as `Revise academic research website`, then click **Commit to main** (or your currently configured publishing branch), followed by **Push origin**.
-9. Open **Repository → View on GitHub → Settings → Pages**; verify the selected publishing branch and root directory match the place you pushed the files.
-10. Open `https://manojkumargupta2312.github.io/` and refresh when deployment finishes. Check the portrait, the research media, the conference section and the mobile layout.
-
-**Important:** Files inside a repository are public. Do not upload the full PhD thesis, private data, or materials you do not wish to publish. The full thesis PDF is **not included** in this bundle.
-
-## 4. Research media order and labels
-
-See `MEDIA_MAPPING.csv`. The nine visible research entries appear in this order:
-
-1. Vortex-ring experimental facility photograph
-2. Fog-seeded propagation images
-3. Vortex PIV characterisation video
-4. Water-droplet interaction video
-5. MATLAB Lagrangian tracking movie
-6. Vortex-frame Voronoï movie
-7. Kinematic kernel figure (thesis Figure 5.8)
-8. TBL facility arrangement (thesis Figure 6.1; replace with an actual photo when available)
-9. TBL Voronoï video
-
-Research content follows the submitted thesis *Clustering and Redistribution of Polydisperse Droplets in Vortical Flows* (July 2026). Claims about near-contact kernels explicitly distinguish kinematic estimates from physically observed droplet collisions and coalescence. The TBL is described as an atmospheric-boundary-layer-*like* laboratory flow, not a complete atmospheric simulation.
-
-## 5. APS DFD 2026 presentation (updated with supplied abstract)
-
-- Conference: 79th Annual Meeting of the APS Division of Fluid Dynamics, **22–24 November 2026** (three-day meeting).
-- Venue: **Orange County Convention Center, Orlando, Florida, USA** (confirmed on APS official conference website).
-- Talk title: *Vortex-ring-induced clustering and collision enhancement of polydisperse droplets*.
-- Presentation: **24 November 2026 (scheduled)**, session *Particle-Laden Flows: Collision and Aggregation*. The exact talk clock time was not established; no time is invented.
-- The **complete abstract provided directly by the author**, including the event-based dynamic collision-count sentence, has been copied to `index.html` without editing its scientific claims.
-- The **full author affiliations and funding acknowledgement** supplied by the author appear below the abstract.
-- Official meeting programme: https://dfd-meeting.aps.org/schedule/
-- **As of 23 November 2026**, the talk date is in the future. Once the talk has actually been delivered, update `(scheduled)` in `index.html` to `(presented)` or remove the parenthesis.
-
-## 6. Contents
-
-- `index.html` — complete page with responsive media-led research sequence
-- `assets/css/styles.css` — presentation rules and breakpoints
-- `assets/js/main.js` — navigation and video playback behaviour
-- `assets/images/` — portrait, relevant still images, user-replaceable TBL photo, and thesis figure crops
-- `assets/media/` — provided original experimental image/video files plus easy-to-replace TBL video alias
-- `files/` — original CV and existing conference poster/abstract PDFs
-- `media-config.json` and `MEDIA_MAPPING.csv` — provenance and exact file mapping
-
-## 7. Design and verification
-
-- One-line `Manojkumar I. Gupta` (without a period after the surname) in the hero on typical screens.
-- No numerical highlight cards, oversized labels or decorative statistics.
-- Research rows use wide media (~68%) and vertically centred technical text (~32%).
-- Native video controls, metadata-only preload, no automatic video playback.
-- Research figures are displayed with `object-fit: contain`; axes and colour bars are not deliberately cropped.
-- The design uses dark navy, neutral tones and readable contrast without colour-dependent meaning.
-- Review and responsive test results appear in the delivery message; test again after deployment with your replacement media.
+## Scientific notes
+- Thesis: *Clustering and Redistribution of Polydisperse Droplets in Vortical Flows*, submitted July 2026. Do not imply an awarded degree until confirmed.
+- Laboratory vortex rings are controlled analogues for studying coherent vortices, not full atmospheric cloud replicas.
+- Pair statistics measure kinematic near-contact encounters, not directly observed hydrodynamic collision or coalescence efficiencies.
+- The experiments and data description are grounded in the attached submitted thesis; the statement about helping build the apparatus is based on the author's own account.

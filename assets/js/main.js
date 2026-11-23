@@ -1,28 +1,14 @@
 'use strict';
-const menuButton = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.site-nav');
-if (menuButton && menu) {
-  const closeMenu = () => {
-    menu.classList.remove('is-open');
-    menuButton.setAttribute('aria-expanded', 'false');
-    menuButton.setAttribute('aria-label', 'Open navigation');
-  };
-  menuButton.addEventListener('click', () => {
-    const open = !menu.classList.contains('is-open');
-    menu.classList.toggle('is-open', open);
-    menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-  });
-  menu.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
-  document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-  document.addEventListener('click', event => { if (!menu.contains(event.target) && !menuButton.contains(event.target)) closeMenu(); });
+const button=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.site-nav');
+if(button&&nav){
+  const close=()=>{nav.classList.remove('is-open');button.setAttribute('aria-expanded','false');button.setAttribute('aria-label','Open navigation');};
+  button.addEventListener('click',()=>{const active=!nav.classList.contains('is-open');nav.classList.toggle('is-open',active);button.setAttribute('aria-expanded',String(active));button.setAttribute('aria-label',active?'Close navigation':'Open navigation');});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')close();});
+  document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!button.contains(e.target))close();});
 }
-// Keep video downloads and simultaneous playback limited on long research pages.
-const allVideos = Array.from(document.querySelectorAll('video'));
-for (const video of allVideos) {
-  video.addEventListener('play', () => {
-    for (const other of allVideos) if (other !== video && !other.paused) other.pause();
-  });
-}
-const copyright = document.getElementById('copyright-year');
-if (copyright) copyright.textContent = String(new Date().getFullYear());
+// Keep a single research recording playing at a time.
+const videos=[...document.querySelectorAll('video')];
+videos.forEach(v=>v.addEventListener('play',()=>videos.forEach(other=>{if(other!==v&&!other.paused)other.pause();})));
+const year=document.querySelector('#copyright-year');if(year)year.textContent=new Date().getFullYear().toString();
