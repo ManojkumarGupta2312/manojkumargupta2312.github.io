@@ -1,3 +1,37 @@
+# Website update: original media aspect ratios preserved
+
+**Version:** 24 November 2026 — Aspect-ratio-corrected edition.
+
+This version replaces fixed-height research media boxes with native-proportion image and video frames.
+Every photograph, scientific plot and MP4 is displayed using its source width-to-height ratio.
+For example: 1280 × 1000 stays 1.280:1; 1550 × 900 stays 1.722:1. The entire
+media element is scaled uniformly; no `object-fit: cover`, clipping, or stretching is used
+for research media. The original media bytes have not been changed.
+
+All display media are kept compact (up to approximately 265 px tall on desktop); very
+wide figures are shown proportionally and can be enlarged using **Expand image**. On mobile
+the same image/video ratios are preserved.
+
+**Future replacements:** You can replace `assets/images/profile-photo.jpg`,
+`assets/images/tbl-facility.jpg`, and `assets/media/tbl-voronoi.mp4` with new files keeping
+those names. The JavaScript adjusts each research media frame to the new source ratio
+once it loads; the profile photograph displays at its natural ratio.
+
+## Quick GitHub Desktop update
+
+1. Download and extract the ZIP until you see `index.html` and `assets`.
+2. GitHub Desktop → **Repository → Show in Explorer**.
+3. Copy **everything inside** the extracted website folder into the repository folder.
+4. Choose **Replace files in destination**. Do not delete `.git`, `.github`, `CNAME`, or `.nojekyll`.
+5. Preview the repository's `index.html` in your browser. Check that the research videos show the complete frame.
+6. GitHub Desktop → **Commit to main** → **Push origin**.
+7. After GitHub Pages publishes, refresh your site with **Ctrl + Shift + R**.
+
+Note: GitHub Desktop may show only the files that actually changed, which is normal.
+Do not delete the entire repository to force an update.
+
+---
+
 # Manojkumar I. Gupta | Academic research portfolio
 
 **A complete, ready-to-publish, static academic website** using only the supplied photographs, recordings, thesis-derived images and verified academic information. Compatible with the root of an existing GitHub Pages repository. No installation, framework, build or API key is required.

@@ -12,3 +12,5 @@ URL references: all local HTML links and source/poster assets resolve to existin
 Scientific notes: full user-provided APS DFD 2026 abstract retained, with affiliations and funding; near-contact kernel is not described as a measured collision/coalescence rate.
 
 Rendering was checked using locally embedded resources because Chromium blocks file and loopback page navigation in this environment. The local deployed website has not been accessed. Test MP4 playback on the publicly deployed GitHub Pages website after upload.
+
+Aspect-ratio edition: Intrinsic source dimensions measured for all 9 research media; CSS fixed heights removed; media-scale containment and width/height attributes set; JS updates geometry on source load; image previews preserve aspect ratio.
