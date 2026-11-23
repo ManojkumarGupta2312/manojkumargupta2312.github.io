@@ -1,129 +1,58 @@
-# Manojkumar I. Gupta — research portfolio update (24 November 2026)
+# FINAL academic research website — Manojkumar I. Gupta
 
-This revision expands the scientific motivation on the landing page, spells out **Prime Minister’s Research Fellow (PMRF)** and moderately enlarges all nine research media panels while preserving their source aspect ratios.
+This is a **complete GitHub Pages website**, not a mockup. It uses the original research media supplied by the author and keeps nine experiments in the requested order. The top-level `index.html` is the homepage. No build step, framework or paid service is needed.
 
-**Media layout:** Desktop research cards allocate approximately 62% of the available width to the video/image column and 38% to text. The media have a maximum display width of 650 px and maximum display height of 360 px; neither constraint changes the aspect ratio. On mobile, media appears above its description at its natural width within the viewport.
+## See the website correctly
 
-**To update:** Extract this ZIP; open the folder containing `index.html`, `assets/` and `files/`. In GitHub Desktop choose **Repository → Show in Explorer**. Copy these new files and folders into the repository root and choose **Replace**. Do not delete the existing `.git`, `.github`, `CNAME` or `.nojekyll`. Check locally by opening `index.html`; commit and Push origin in GitHub Desktop. Refresh the published page with Ctrl+Shift+R after GitHub Pages deployment.
+1. Right-click the ZIP and choose **Extract All**.
+2. Open the extracted folder; you must see `index.html`, `assets`, `files` and `PREVIEWS` **together**.
+3. Double-click `index.html` to open it in your browser. Check the page against `PREVIEWS/WEBSITE_1366_HOMEPAGE.png` and `PREVIEWS/WEBSITE_375_HOMEPAGE.png`.
+4. The stylesheet and JavaScript are **embedded in `index.html` as fallbacks**, so the layout still works without the external CSS/JS. The full media folders must be retained for images and videos.
 
-To replace media, keep the file type and exact name: `assets/images/profile-photo.jpg`, `assets/images/tbl-facility.jpg`, and `assets/media/tbl-voronoi.mp4`. Images/video adjust to the dimensions of a replacement automatically, without cropping.
+## Replace three media files without editing HTML
 
-# Website update: original media aspect ratios preserved
-
-**Version:** 24 November 2026 — Aspect-ratio-corrected edition.
-
-This version replaces fixed-height research media boxes with native-proportion image and video frames.
-Every photograph, scientific plot and MP4 is displayed using its source width-to-height ratio.
-For example: 1280 × 1000 stays 1.280:1; 1550 × 900 stays 1.722:1. The entire
-media element is scaled uniformly; no `object-fit: cover`, clipping, or stretching is used
-for research media. The original media bytes have not been changed.
-
-All display media are kept compact (up to approximately 265 px tall on desktop); very
-wide figures are shown proportionally and can be enlarged using **Expand image**. On mobile
-the same image/video ratios are preserved.
-
-**Future replacements:** You can replace `assets/images/profile-photo.jpg`,
-`assets/images/tbl-facility.jpg`, and `assets/media/tbl-voronoi.mp4` with new files keeping
-those names. The JavaScript adjusts each research media frame to the new source ratio
-once it loads; the profile photograph displays at its natural ratio.
-
-## Quick GitHub Desktop update
-
-1. Download and extract the ZIP until you see `index.html` and `assets`.
-2. GitHub Desktop → **Repository → Show in Explorer**.
-3. Copy **everything inside** the extracted website folder into the repository folder.
-4. Choose **Replace files in destination**. Do not delete `.git`, `.github`, `CNAME`, or `.nojekyll`.
-5. Preview the repository's `index.html` in your browser. Check that the research videos show the complete frame.
-6. GitHub Desktop → **Commit to main** → **Push origin**.
-7. After GitHub Pages publishes, refresh your site with **Ctrl + Shift + R**.
-
-Note: GitHub Desktop may show only the files that actually changed, which is normal.
-Do not delete the entire repository to force an update.
-
----
-
-# Manojkumar I. Gupta | Academic research portfolio
-
-**A complete, ready-to-publish, static academic website** using only the supplied photographs, recordings, thesis-derived images and verified academic information. Compatible with the root of an existing GitHub Pages repository. No installation, framework, build or API key is required.
-
-## What changed in this redesign
-
-The layout has been reviewed in a rendered Chromium browser at 320, 375, 768, 1024, 1366 and 1920 pixels. The older very large media blocks have been replaced by compact, balanced **media-left / text-right research cards**, each with a media viewport of about **250 px high on a typical desktop**. Text is vertically centred alongside each image or video. On narrow phones, media appears above the explanation.
-
-- A more distinctive but restrained homepage with a smaller professional portrait, warm academic typography and subtle graphic accents.
-- A three-part **visual research index** linking directly to the experiments, droplet-response work and turbulent-boundary-layer research.
-- Nine clear research cards with short, engaging science descriptions, bounded media, fine borders, subtle shadows and consistent captions.
-- A **full-size image viewer** for still photographs and figures; native MP4 controls and fullscreen on videos. No forced autoplay and only one video can play at once.
-- Academic background and practical research capabilities in tidy, scannable panels.
-- Journal and APS DFD 2026 outputs in balanced cards, with the complete user-supplied APS abstract, affiliation and funding in an expandable detail.
-- A compact conference list, three experience cards and a clear contact section for researchers, prospective supervisors and academic employers.
-- The thesis PDF is **not included**. Nothing describes near-contact encounter kernels as directly measured coalescence rates.
-
-## Use the website on your computer
-
-1. Extract the ZIP archive.
-2. Open the folder named `Manojkumar_Gupta_Academic_Website_Visual_Redesign_Final`.
-3. Double-click `index.html` to open it in Chrome, Firefox or Edge. Research videos are local MP4s and work best in modern browsers.
-4. For another way to preview, open this folder in VS Code and run a simple local server, or use `python -m http.server 8000` in a terminal and open `http://localhost:8000/`.
-
-## Update the existing GitHub Pages website using GitHub Desktop (Windows)
-
-**Do not delete the repository folder or the `.git` directory.** To avoid losing anything, overwrite the old website contents rather than deleting everything first.
-
-1. Download the new ZIP and **Extract All** in Downloads.
-2. Open the extracted website folder. Confirm **`index.html`, `assets`, `files`, `README.md`** are inside it.
-3. Open **GitHub Desktop**, select repository **`manojkumargupta2312.github.io`** and choose **Repository → Show in Explorer**. This opens the local *repository root*.
-4. Optional backup: copy the old repository folder to another location. Prior committed files can also be restored from Git history.
-5. In the **extracted new website folder**, select everything inside (**Ctrl+A**, **Ctrl+C**). In the **local GitHub repository root**, paste (**Ctrl+V**), and choose **Replace the files in the destination** when Windows prompts. **Do not copy the outer ZIP or the outer folder** into the repository. The new `index.html` must sit directly in the repository root alongside `assets` and `files`.
-6. **Do not remove** `.git`, `.github`, `CNAME`, `.nojekyll`, branch settings or other existing GitHub configuration. Unused older assets may be cleaned up separately, but leaving them initially is harmless.
-7. Return to GitHub Desktop → **Changes**. A long list of modified and added files is normal. Enter message `Improve research portfolio layout` → click **Commit to main** → **Push origin**.
-8. Check the repository's **Actions** page for a successful Pages deployment. If required, use **Settings → Pages** to confirm the correct publishing branch and `/(root)` folder. Do not change working configuration unnecessarily.
-9. Open **https://manojkumargupta2312.github.io/**. After deployment, use **Ctrl + Shift + R**. Check the portrait, research videos, image expansion, APS abstract, CV and external links on desktop and phone.
-
-You do **not** upload the ZIP itself to GitHub. Each included video file is smaller than GitHub's 100 MB individual-file limit. The package is larger because it contains multiple research recordings.
-
-## Three simple media replacements (no coding required)
-
-| What you want to change | Exact file to overwrite | Format |
+| Item | Replace this precise file | Type |
 |---|---|---|
 | Profile portrait | `assets/images/profile-photo.jpg` | JPEG |
-| TBL facility photograph | `assets/images/tbl-facility.jpg` | JPEG |
-| TBL Voronoï animation | `assets/media/tbl-voronoi.mp4` | MP4 (H.264 recommended) |
+| TBL facility photo | `assets/images/tbl-facility.jpg` | JPEG |
+| TBL Voronoï movie | `assets/media/tbl-voronoi.mp4` | MP4 with H.264 recommended |
 
-Important details:
-- Use **Windows Explorer → View → Show → File name extensions** to confirm `.jpg` and `.mp4`, not `.jpg.jpg` or `.mp4.mp4`.
-- For photos, save/convert the new image to JPEG and rename it to the exact name above. Do not simply rename a PNG to `.jpg` without converting it.
-- For MP4, convert to H.264 MP4 when necessary; overwriting the video is enough if it has the same filename.
-- The TBL video **poster/thumbnail** can also be changed: `assets/images/tbl-video-poster.jpg`. If you replace the MP4 without updating this poster, visitors will see the older still image until they press Play.
-- The 3 small featured topic thumbnails are `assets/images/teaser-facility.jpg`, `teaser-droplets.jpg` and `teaser-tbl.jpg`. The third thumbnail can be replaced separately if you change the TBL photograph.
-- After swapping local files, commit and push as above. If the browser still shows the previous image, refresh without cache.
+Optional: update `assets/images/tbl-video-poster.jpg` to a still frame from the new TBL video. Make sure Windows Explorer shows filename extensions (View → Show → File name extensions). Do not create `profile-photo.jpg.jpg` accidentally.
 
-## Directory structure
+## GitHub Desktop: replace the current website safely
 
-```text
-index.html                          Homepage and all website sections
-assets/css/styles.css               Aesthetic styling and responsive layouts
-assets/js/main.js                   Mobile menu, image viewer and video control
-assets/images/                     Portrait, TBL photograph, posters, figure, small topic thumbnails
-assets/media/                      Experimental images and all MP4 recordings
-files/                              CV, conference abstracts and poster PDFs
-media-config.json                   Original media names and research sequence
-MEDIA_MAPPING.csv                   Exact media-to-section mapping
-START_HERE_UPDATE_WEBSITE.txt       Short beginner-friendly instructions
-QA_CHECKS.txt                       Verification notes
-robots.txt                          Search indexing information
-sitemap.xml                         Homepage entry for search crawlers
-```
+1. Extract the new ZIP completely and confirm `index.html` opens with the correct design.
+2. Open GitHub Desktop → select `manojkumargupta2312.github.io` → **Repository → Show in Explorer**.
+3. Back up the old site if useful; previously committed versions can also be retrieved from Git history.
+4. In that **repository root**, replace the old `index.html`, `assets`, `files` and obsolete site docs with the corresponding files from the new extracted folder. To avoid stale assets, remove old `assets` and `files` **before** copying the new ones.
+5. Do **not** delete `.git`, `.github`, `CNAME`, `.nojekyll` or existing deployment configuration files.
+6. Copy **all files and folders from inside** the newly extracted site directory to the repository root. Do not paste the ZIP or a second parent folder. `index.html` must sit at the repository root.
+7. GitHub Desktop → write a Summary like `Publish final research portfolio` → **Commit to main** → **Push origin**.
+8. Check GitHub Pages deployment in the repository **Actions** tab, then open `https://manojkumargupta2312.github.io/` and press Ctrl+Shift+R. If required, check **Settings → Pages**; for a normal user site select branch `main`, folder `/(root)`.
+9. Check the mobile menu, the portrait, nine research rows, five videos, APS abstract disclosure, CV and external links.
 
-## Scientific and editorial guardrails
+## Changes in this revision (24 November 2026)
 
-- Current academic status is **PhD thesis submitted (July 2026)**, not awarded a PhD degree.
-- The thesis is *Clustering and Redistribution of Polydisperse Droplets in Vortical Flows*.
-- A controlled vortex ring isolates coherent-vortex mechanisms; an ABL-like rough-wall TBL shares selected scales with the atmospheric boundary layer, but is not equivalent to a real cloud.
-- RDF, radial relative velocity and kinematic near-contact kernels are used to assess encounter statistics; **physical collisions and coalescence were not directly resolved**.
-- The website's acknowledgement of helping develop the apparatus and FE2B Lab capabilities reflects the author's first-hand account and does not claim sole responsibility for the laboratory.
-- APS DFD 2026 abstract wording, author affiliations and funding are supplied by the author, not reconstructed from an external abstract page.
+- Enlarged the experimental images and videos by increasing the maximum research content width and changing the desktop media/text ratio from approximately 69:31 to approximately 75:25, depending on viewport width. Both images and videos retain their natural proportions without cutting experimental labels or colour bars.
+- Expanded the research explanation directly below the name into two clear paragraphs: (a) the warm-cloud growth bottleneck, turbulence, clustering and relative motion; and (b) the **simple-to-complex** experimental programme, moving from an isolated vortex ring to a droplet-laden turbulent boundary layer.
+- Replaced the abbreviated scholar label with **Prime Minister’s Research Fellow (PMRF) at IIT Delhi**.
+- Gave the introductory visual gallery more image height.
+- Retained the full abstract and all previous nine experiments, publications, TBL facility photograph, recorded videos, academic links and original files.
+- Kept the self-contained CSS failsafe synchronized with the standalone stylesheet so the page does not become unstyled if `assets/css/styles.css` is missing.
 
-## Tests and limitations
+## Editorial approach
 
-The render tests use local files embedded directly in Chromium because this environment restricts local page navigation. They verify responsive layout and visible controls; **they do not constitute a test of the live GitHub Pages deployment**. Static checks validate local file references. MP4 codec checks confirm H.264. After publishing, test playback in the browser on the public site.
+- Minimal, professional first impression designed for academic hiring and research collaborations.
+- Genuine research media and three optional jump-to-research thumbnails, rather than stock images.
+- Science remains accurate and curiosity-led. Near-contact kernels are *kinematic estimates*, not direct physical coalescence measurements. The rough-wall TBL is ABL-like but not an atmospheric duplicate.
+- Personal contribution to apparatus/lab development is communicated in collaboration with Prof. Narsing Kumar Jha and the laboratory team.
+- The complete APS DFD 2026 abstract, author affiliations, meeting dates and funding are available in a disclosure panel; concise summary text is shown by default.
+- Video playback is user-controlled, with native controls and `preload=metadata`.
+- Images of research figures are never cropped in the research rows; the enlarged viewer displays their full original aspect ratio.
+- The full submitted thesis PDF is *not* included; research figure crops and already-public CV and abstracts are included.
+
+## Editing later
+
+To change scientific copy, edit `index.html` using VS Code. All active styling is in the `<style id="site-style-failsafe">` block inside `index.html`. A matching copy is also at `assets/css/styles.css`; if you change the design, update **both** copies to keep the failsafe in sync. JavaScript likewise has a matching copy at `assets/js/main.js`.
+
+Original media filenames (including case, spaces and legacy misspellings) have been retained. `assets/media/tbl-voronoi.mp4` is an easy-to-replace working copy; the source recording remains separately in the media directory.

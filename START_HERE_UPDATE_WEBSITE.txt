@@ -1,16 +1,15 @@
-UPDATE THIS WEBSITE (Windows + GitHub Desktop)
+QUICK UPDATE — MANOJKUMAR GUPTA PORTFOLIO
 
-1. Extract ZIP and open the folder containing index.html.
-2. GitHub Desktop > Repository > Show in Explorer.
-3. Copy all items INSIDE the extracted folder into the GitHub repository folder.
-4. Choose Replace for files with the same name; NEVER delete .git, .github or CNAME.
-5. Double-click index.html locally: verify portrait and research media proportions.
-6. Return to GitHub Desktop > Commit to main > Push origin.
-7. Refresh https://manojkumargupta2312.github.io/ with Ctrl + Shift + R after publication.
+1. EXTRACT ALL files from the ZIP; do not double-click index.html inside the ZIP.
+2. Open extracted index.html. It should look like PREVIEWS/WEBSITE_1366_HOMEPAGE.png.
+3. GitHub Desktop → Repository → Show in Explorer.
+4. Replace old website files with ALL CONTENTS of this extracted website folder.
+   Keep .git, .github, CNAME and .nojekyll if present.
+5. GitHub Desktop → Commit to main → Push origin.
+6. Visit https://manojkumargupta2312.github.io/ after deployment and Ctrl+Shift+R.
 
-REPLACE MEDIA LATER (KEEP EXACT NAMES)
-Portrait: assets/images/profile-photo.jpg
-TBL photograph: assets/images/tbl-facility.jpg
-TBL video: assets/media/tbl-voronoi.mp4
-
-All aspect ratios are preserved; the gallery automatically adapts to replacements.
+TO CHANGE PHOTOS/VIDEOS: replace these exact files in the repository:
+  assets/images/profile-photo.jpg
+  assets/images/tbl-facility.jpg
+  assets/media/tbl-voronoi.mp4
+Optional poster: assets/images/tbl-video-poster.jpg
