@@ -1,118 +1,93 @@
-# Manojkumar I. Gupta — Academic Website
+# Manojkumar I. Gupta — revised academic website
 
-A complete static academic website for GitHub Pages, rebuilt from the researcher's previous site and original experimental media. The submitted 2026 PhD thesis was used to verify the research descriptions and selected findings. **The full thesis PDF is deliberately not included.**
+This is a complete, framework-free static website prepared for the GitHub Pages repository:
 
-## 1. What is included
+`https://github.com/ManojkumarGupta2312/manojkumargupta2312.github.io`
 
-- `index.html` — full website, ready to serve from the repository root.
-- `assets/css/styles.css` — all styling, including layouts for phones, tablets, laptops and desktop monitors.
-- `assets/js/main.js` — accessible mobile navigation and single-video-at-a-time playback.
-- `assets/images/` — existing researcher portrait, original existing graphical abstract, video posters derived from the supplied videos, two cropped research diagrams/figures from the researcher's thesis, favicon.
-- `assets/media/` — **all five original MP4 videos, plus two original experimental research images, with exact filenames preserved.**
-- `files/` — previously linked academic CV, EFDC2 abstract, FMFP 2025 abstract and PMRF symposium poster.
-- `media-config.json` — machine-readable media inventory and mapping.
-- `MEDIA_MAPPING.csv` — original filenames, corresponding website sections, media types and inclusion status.
-- `README.md` — this file.
+**This ZIP contains the website files, not a parent folder that should be deployed.** Upload the **contents** of the extracted website folder into the root of your repository.
 
-The website does not require React, Node.js, npm, a web host other than GitHub Pages, third-party scripts, API keys or paid dependencies.
+## 1. Three files you can replace later — no HTML editing
 
-## 2. Preview it on your computer
+| What you want to update | Open this folder | Replace this exact file |
+|---|---|---|
+| Your photograph | `assets/images/` | `profile-photo.jpg` |
+| TBL facility photograph/figure | `assets/images/` | `tbl-facility.jpg` |
+| TBL Voronoï video | `assets/media/` | `tbl-voronoi.mp4` |
 
-1. Extract `Manojkumar_Gupta_Academic_Website_Final.zip` to a normal folder.
-2. Open the extracted `index.html` file in Chrome, Edge, Firefox or Safari.
-3. Make sure the extracted folder still contains `assets/` and `files/` directly beside `index.html`. Do not move the HTML file away from these folders.
-4. Press the video play buttons to review the five supplied research videos. Videos are not set to autoplay and use `preload="metadata"`.
+**How to replace a photo:** Open the new photo in Windows **Paint** → **File → Save as → JPEG picture** → give it the exact name `profile-photo.jpg` or `tbl-facility.jpg` → save it into the matching folder → click **Replace the file in the destination**. A clear portrait-oriented picture works best for the profile; the TBL image can be any aspect ratio. The site will fit it without cropping research diagrams, legends or axis labels.
 
-If browser security settings block local video seeking, you can view it using a small local server. In a terminal opened inside the extracted folder, run `python -m http.server 8000`, then open `http://localhost:8000` in a browser. This is only for local preview; **GitHub Pages requires no Python server**.
+**How to replace the TBL video:** Your new video needs to be MP4 (preferably H.264/AAC for broad browser support). Rename it exactly `tbl-voronoi.mp4`, copy it into `assets/media`, and approve **Replace**. Do not merely change the extension of a non-MP4 video; export it to MP4 first. The site keeps a poster in `assets/images/tbl-video-poster.jpg`. If desired, replace that JPEG with a suitable still frame from the new video.
 
-## 3. Exactly how to replace your existing GitHub Pages site — recommended route
+**After replacing any file:** Commit and push using GitHub Desktop as in section 3 below. If the previous image still appears online, press **Ctrl + Shift + R** to bypass the browser cache.
 
-Repository: <https://github.com/ManojkumarGupta2312/manojkumargupta2312.github.io>
+The original experiment videos remain in `assets/media` under their *exact original filenames*. The easy-to-replace `tbl-voronoi.mp4` is an additional working copy of the supplied TBL recording, so its original filename remains preserved for provenance.
 
-Current website: <https://manojkumargupta2312.github.io/>
+## 2. Preview on Windows
 
-**Do not upload the ZIP file itself as the website. Extract it and upload its contents.**
+1. Right-click the ZIP and select **Extract All**.
+2. Open the extracted folder and double-click `index.html`.
+3. Test navigation and each video. Some file-based browser restrictions may limit playback; you can preview via a local web server or after deployment.
 
-### Recommended: GitHub Desktop (easiest way to replace a complete site)
+## 3. Update your existing GitHub Pages website
 
-1. Sign into GitHub at `github.com`.
-2. Open the existing repository at the link above. Optional but recommended: choose **Code → Download ZIP** and save a backup of your previous website.
-3. Install and sign into **GitHub Desktop**: <https://desktop.github.com/>.
-4. In GitHub Desktop, select **File → Clone repository → URL** and enter `https://github.com/ManojkumarGupta2312/manojkumargupta2312.github.io`. Choose a local destination and click **Clone**.
-5. Open that cloned local repository in Windows File Explorer. You will see files such as the **old** `index.html`, `assets/` and `files/`.
-6. Replace the previous site's `index.html`, `assets/` and `files/` with the new `index.html`, `assets/`, `files/`, `media-config.json`, `MEDIA_MAPPING.csv` and `README.md` from this package. In other words, copy **everything inside** the extracted package into the repository root. Allow replacement of files with matching names.
-7. It is best to **delete obsolete old website assets** no longer used by the new page, particularly the previous `assets/images/theme-*.png` files. You can delete the old `assets/` and `files/` folders before copying the new ones **if you know they contain only files for the former website**. Do not accidentally remove unrelated repository content.
-8. **Do not delete** `.git`, `CNAME` (if one exists for a custom domain), `.nojekyll` or necessary `.github/workflows` configuration without checking its purpose.
-9. Open GitHub Desktop. Under **Changes**, you should see the new and modified HTML, CSS, assets and videos.
-10. Enter a commit summary, for example `Redesign academic website with original research media`.
-11. Click **Commit to main** (or the repository's existing default publishing branch), then click **Push origin**.
-12. In the repository on github.com, go to **Settings → Pages**. If using branch-based deployment, confirm **Build and deployment → Deploy from a branch → main → /(root)**, then save if necessary. If your repository uses a working GitHub Actions publishing workflow, preserve the relevant configuration instead of switching it blindly.
-13. Open <https://manojkumargupta2312.github.io/> after GitHub Pages has built the new version. In the browser, use **Ctrl + Shift + R** (Windows) or **Cmd + Shift + R** (Mac) to clear cached copies of old CSS and images.
-14. Review the six research sections on both your phone and computer, and play each video.
+**Method: GitHub Desktop (recommended, because video files exceed the GitHub browser's comfortable upload limits).**
 
-**GitHub web browser alternative:** You can use **Add file → Upload files** at the repository root, but you must retain the `assets/css/`, `assets/js/`, `assets/images/`, `assets/media/` and `files/` folder hierarchy. Some browsers/upload interfaces handle folders differently. GitHub Desktop is more reliable for a site with nested directories and videos. Do not upload only `index.html`, and do not leave the ZIP file in the repository as your deployed website.
+1. Make a backup of your old site: visit the repository, click **Code → Download ZIP** and save that backup separately.
+2. Open **GitHub Desktop** and sign in.
+3. Select **File → Clone repository** and choose `ManojkumarGupta2312/manojkumargupta2312.github.io`. If already cloned, choose it from the repository list instead.
+4. In GitHub Desktop click **Repository → Show in Explorer**. This opens the local website repository folder.
+5. In that folder, delete the old website's `index.html`, `assets` and `files` if present. You may replace old `README.md` and `MEDIA_MAPPING.csv` too.
+6. **Do not delete** `.git`, `.github`, `CNAME` or `.nojekyll` (if present), or any unrelated custom-domain/deployment files you still use.
+7. Open the **new extracted website folder**. Press **Ctrl + A** to select *everything inside it*, **Ctrl + C**, then paste into the GitHub repository folder using **Ctrl + V**. Do not paste the ZIP as a file, or add an extra nested folder around `index.html`.
+8. In GitHub Desktop, write a summary such as `Revise academic research website`, then click **Commit to main** (or your currently configured publishing branch), followed by **Push origin**.
+9. Open **Repository → View on GitHub → Settings → Pages**; verify the selected publishing branch and root directory match the place you pushed the files.
+10. Open `https://manojkumargupta2312.github.io/` and refresh when deployment finishes. Check the portrait, the research media, the conference section and the mobile layout.
 
-### Replace or keep old site files?
+**Important:** Files inside a repository are public. Do not upload the full PhD thesis, private data, or materials you do not wish to publish. The full thesis PDF is **not included** in this bundle.
 
-**Replace the old website, not alongside it.** The existing repo root should have **one active `index.html`**. Replace the old CSS, research section assets and site structure with the files in this package. Remove old orphaned theme illustrations if not referenced elsewhere. Preserve separate infrastructure or custom-domain files that you recognise as necessary.
+## 4. Research media order and labels
 
-## 4. Original experimental media mapping
+See `MEDIA_MAPPING.csv`. The nine visible research entries appear in this order:
 
-All five uploaded videos and both vortex-ring images are **already included**; no video copying is required when using the full ZIP.
+1. Vortex-ring experimental facility photograph
+2. Fog-seeded propagation images
+3. Vortex PIV characterisation video
+4. Water-droplet interaction video
+5. MATLAB Lagrangian tracking movie
+6. Vortex-frame Voronoï movie
+7. Kinematic kernel figure (thesis Figure 5.8)
+8. TBL facility arrangement (thesis Figure 6.1; replace with an actual photo when available)
+9. TBL Voronoï video
 
-| Original filename | Website research section | Destination | Status |
-|---|---|---|---|
-| `Snapshots showing the propogation of the vortex ring.jpg` | 01. Vortex-ring generation | `assets/media/` | Included, JPEG |
-| `Vortex ring PIV_analysed into the MAtalb PIVlab.mp4` | 01. Vortex-ring characterisation | `assets/media/` | Included, MP4 |
-| `droplet laden vortex flow facility developed at IIT Delhi.png` | 02. Vortex–droplet interaction | `assets/media/` | Included, PNG |
-| `Interaction of vortex ring with polydisperse droplets.mp4` | 02. Vortex–droplet interaction | `assets/media/` | Included, MP4 |
-| `Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4` | 03. Droplet tracking | `assets/media/` | Included, MP4 |
-| `Vortex ring frame voronoii analysis.mp4` | 04. Preferential concentration | `assets/media/` | Included, MP4 |
-| `voronoii-analysis-in-the-vortex-frame-in-abl-like-tbl_ARNha4gT(1).mp4` | 06. Turbulent boundary layer | `assets/media/` | Included, MP4 |
+Research content follows the submitted thesis *Clustering and Redistribution of Polydisperse Droplets in Vortical Flows* (July 2026). Claims about near-contact kernels explicitly distinguish kinematic estimates from physically observed droplet collisions and coalescence. The TBL is described as an atmospheric-boundary-layer-*like* laboratory flow, not a complete atmospheric simulation.
 
-The researcher's submitted thesis also supplied original analytical **Figure 5.8** (kinematic kernel) and **Figure 6.1** (wind-tunnel arrangement). Cropped versions were included as `assets/images/kinematic-kernel-thesis-fig-5-8.webp` and `assets/images/wind-tunnel-arrangement-thesis-fig-6-1.webp`. These are identified as thesis figures in the site; no thesis pages, full PDF, or unrelated stock visuals are distributed.
+## 5. APS DFD 2026 presentation (updated with supplied abstract)
 
-### Missing or unsuitable file
+- Conference: 79th Annual Meeting of the APS Division of Fluid Dynamics, **22–24 November 2026** (three-day meeting).
+- Venue: **Orange County Convention Center, Orlando, Florida, USA** (confirmed on APS official conference website).
+- Talk title: *Vortex-ring-induced clustering and collision enhancement of polydisperse droplets*.
+- Presentation: **24 November 2026 (scheduled)**, session *Particle-Laden Flows: Collision and Aggregation*. The exact talk clock time was not established; no time is invented.
+- The **complete abstract provided directly by the author**, including the event-based dynamic collision-count sentence, has been copied to `index.html` without editing its scientific claims.
+- The **full author affiliations and funding acknowledgement** supplied by the author appear below the abstract.
+- Official meeting programme: https://dfd-meeting.aps.org/schedule/
+- **As of 23 November 2026**, the talk date is in the future. Once the talk has actually been delivered, update `(scheduled)` in `index.html` to `(presented)` or remove the parenthesis.
 
-The uploaded file `TBL + Droplets Interaction(1).jpeg` is a **Windows File Explorer screenshot** showing the names of TBL assets; it is not a photograph of the wind-tunnel facility. It was intentionally **not** displayed as experimental evidence. A wind-tunnel arrangement illustration from the submitted thesis is included instead. If you have the actual original TBL facility photograph, it can be added later.
+## 6. Contents
 
-### How to add a replacement TBL facility photograph later
+- `index.html` — complete page with responsive media-led research sequence
+- `assets/css/styles.css` — presentation rules and breakpoints
+- `assets/js/main.js` — navigation and video playback behaviour
+- `assets/images/` — portrait, relevant still images, user-replaceable TBL photo, and thesis figure crops
+- `assets/media/` — provided original experimental image/video files plus easy-to-replace TBL video alias
+- `files/` — original CV and existing conference poster/abstract PDFs
+- `media-config.json` and `MEDIA_MAPPING.csv` — provenance and exact file mapping
 
-1. Copy the image into `assets/media/`, keeping its original filename.
-2. In `index.html`, find the section `<article ... id="tbl" ...>` and the secondary image with `src="assets/images/wind-tunnel-arrangement-thesis-fig-6-1.webp"`.
-3. Change this `src` to `assets/media/Your exact image filename.jpg` (or `.png` as appropriate), edit the `alt` description and the caption so they describe the actual photo.
-4. Update `media-config.json` and `MEDIA_MAPPING.csv` to reflect the new image.
-5. Commit and push the changes to GitHub.
+## 7. Design and verification
 
-## 5. Updating the scientific content later
-
-- Research descriptions and numerical highlights are all in `index.html`, next to their corresponding research media.
-- The homepage facts are in the `.insight-band` section.
-- Publication links, PDFs, academic email and professional profile URLs are also in `index.html`.
-- The styling is centralised in `assets/css/styles.css`. No build step is needed.
-- Do **not** label an unpublished doctoral manuscript as a published journal article until it has been accepted/published.
-- The number **273** is a relative, probability-weighted, geometric **near-contact encounter-kernel** enhancement under the adopted reference definitions. It does not represent directly observed collisions or coalescence. This qualification is deliberately visible on the website.
-- The laboratory rough-wall TBL was designed to share **selected turbulence scales** with atmospheric boundary layers; it is not a thermodynamically complete cloud environment.
-- Current wording states **PhD thesis submitted**, rather than PhD degree awarded. Update this only after a formal degree award.
-- The APS 2026 contribution is labelled **scheduled for 24 November 2026**. After the presentation, update the status to **presented** if appropriate.
-
-## 6. Tests actually performed on this package
-
-- File audit: internal HTML `src`, `poster` and `href` paths checked against the included files.
-- Browser-layout checks at 375, 768, 1366 and 1920 CSS pixels using headless Chromium and the actual page HTML/CSS, with user-supplied images injected into the test environment.
-- On those four sizes, verified no document-level horizontal overflow; hero image alignment; six research cards; five video elements; all image assets load; no runtime JavaScript errors.
-- Tested mobile navigation open, close and link selection.
-- Used `ffprobe` to inspect all five supplied videos: all contain H.264 video.
-- Confirmed the full thesis PDF is not packaged.
-- Browser media *streaming from live GitHub Pages* was **not tested**, because this package has not been deployed. Playback should be checked once uploaded to the repository.
-- Original external URLs from the earlier website have been preserved (e.g. Scholar, ORCID, LinkedIn, FE2B). Their continued availability depends on the external services.
-
-## 7. Notes on size and GitHub hosting
-
-The media-inclusive website is approximately 90 MB before ZIP compression. The largest single original video is approximately 34 MiB. That is below GitHub's 100 MB per-file hard limit, but a media-heavy site can consume substantial repository space and page bandwidth. Native player controls, poster images and metadata-only preloading keep the initial page more efficient.
-
-If you later choose to host videos elsewhere, you can leave the names in `media-config.json` and adjust the HTML sources. **This supplied version already includes all five videos**, so no third-party hosting is required for initial deployment.
-
----
-
-Prepared for direct deployment to the existing `manojkumargupta2312.github.io` repository. No repository files were changed by this package creation process.
+- One-line `Manojkumar I. Gupta` (without a period after the surname) in the hero on typical screens.
+- No numerical highlight cards, oversized labels or decorative statistics.
+- Research rows use wide media (~68%) and vertically centred technical text (~32%).
+- Native video controls, metadata-only preload, no automatic video playback.
+- Research figures are displayed with `object-fit: contain`; axes and colour bars are not deliberately cropped.
+- The design uses dark navy, neutral tones and readable contrast without colour-dependent meaning.
+- Review and responsive test results appear in the delivery message; test again after deployment with your replacement media.

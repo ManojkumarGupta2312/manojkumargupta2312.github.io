@@ -1,11 +1,12 @@
-﻿original_filename,section,destination,type,included
-Snapshots showing the propogation of the vortex ring.jpg,01 — Vortex-ring generation & characterisation,assets/media/,JPEG image,True
-Vortex ring PIV_analysed into the MAtalb PIVlab.mp4,01 — Vortex-ring generation & characterisation,assets/media/,MP4 video,True
-droplet laden vortex flow facility developed at IIT Delhi.png,02 — Vortex-ring/droplet interaction,assets/media/,PNG image,True
-Interaction of vortex ring with polydisperse droplets.mp4,02 — Vortex-ring/droplet interaction,assets/media/,MP4 video,True
-Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4,03 — Lagrangian tracking in the vortex frame,assets/media/,MP4 video,True
-Vortex ring frame voronoii analysis.mp4,04 — Preferential concentration and Voronoï,assets/media/,MP4 video,True
-voronoii-analysis-in-the-vortex-frame-in-abl-like-tbl_ARNha4gT(1).mp4,06 — Droplets in turbulent boundary layers,assets/media/,MP4 video,True
-TBL + Droplets Interaction(1).jpeg,"Not published: source is a File Explorer screenshot, not facility image",Not applicable,JPEG screenshot,False
-Figure 5.8 in submitted thesis (page 194 of PDF),05 — Collision-relevant pair statistics,assets/images/kinematic-kernel-thesis-fig-5-8.webp,Derived image crop,True
-Figure 6.1 in submitted thesis (page 211 of PDF),06 — Turbulent boundary-layer facility,assets/images/wind-tunnel-arrangement-thesis-fig-6-1.webp,Derived image crop,True
+﻿original_filename_or_source,website_section,destination,type,status
+droplet laden vortex flow facility developed at IIT Delhi.png,01 Experimental facility,assets/media/,PNG,Included; original filename
+Snapshots showing the propogation of the vortex ring.jpg,02 Fog-seeded flow visualisation,assets/media/,JPEG,Included; original filename
+Vortex ring PIV_analysed into the MAtalb PIVlab.mp4,03 Vortex characterisation,assets/media/,MP4,Included; original filename
+Interaction of vortex ring with polydisperse droplets.mp4,04 Droplet interaction,assets/media/,MP4,Included; original filename
+Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4,05 Lagrangian tracking,assets/media/,MP4,Included; original filename
+Vortex ring frame voronoii analysis.mp4,06 Preferential concentration,assets/media/,MP4,Included; original filename
+"Figure 5.8, submitted PhD thesis",07 Kinematic near-contact kernel,assets/images/kinematic-kernel-thesis-fig-5-8.webp,WEBP,Included thesis figure crop
+"Figure 6.1, submitted PhD thesis",08 TBL facility,assets/images/tbl-facility.jpg,JPEG,Included replaceable working copy
+voronoii-analysis-in-the-vortex-frame-in-abl-like-tbl_ARNha4gT(1).mp4,09 TBL Voronoi analysis,assets/media/tbl-voronoi.mp4,MP4,Included replaceable working copy; original retained
+manoj-profile.png (existing website),Hero portrait,assets/images/profile-photo.jpg,JPEG,Included replaceable working copy; original retained
+TBL + Droplets Interaction(1).jpeg,Not used: source is a File Explorer screenshot,None,JPEG,Not included in webpage; genuine facility photograph not yet supplied

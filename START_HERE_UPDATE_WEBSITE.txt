@@ -1,0 +1,25 @@
+HOW TO REPLACE THREE MEDIA FILES AND PUBLISH (WINDOWS)
+
+FIRST: Extract this ZIP into a folder in Downloads. Do not upload the ZIP itself to your repository.
+
+OPTIONAL — REPLACE THESE THREE FILES BEFORE PUBLISHING:
+1. New profile photo: save as JPG named profile-photo.jpg; replace assets/images/profile-photo.jpg.
+2. New TBL facility image: save as JPG named tbl-facility.jpg; replace assets/images/tbl-facility.jpg.
+3. New TBL Voronoi video: export as MP4 (H.264 recommended), rename it tbl-voronoi.mp4; replace assets/media/tbl-voronoi.mp4.
+   Optional: also replace assets/images/tbl-video-poster.jpg with a matching JPEG still frame.
+NOTE: New replacement media were not attached with this request, so the included examples stay unchanged until you replace them.
+
+TO PUBLISH USING GITHUB DESKTOP:
+1. Open GitHub Desktop and select your repository: manojkumargupta2312.github.io.
+2. Menu Repository > Show in Explorer (the OLD website repository folder).
+3. Save a backup of this old repository folder before changing files.
+4. In that folder, delete/replace old index.html, assets/, files/ and other old site data you want to replace.
+   DO NOT delete .git, .github, CNAME, .nojekyll, or other deployment settings.
+5. Open the NEW extracted folder and copy ALL ITS CONTENTS into the root of the repository folder.
+   index.html must be directly at the repository root, not one folder deeper.
+6. Return to GitHub Desktop. Type summary: Updated academic website and APS DFD 2026 abstract.
+7. Click Commit to main, then Push origin.
+8. Open https://manojkumargupta2312.github.io/ and refresh Ctrl+Shift+R after Pages deploys.
+9. Check the APS abstract, profile image, TBL facility image and TBL video.
+
+The original submitted thesis PDF is not included in this website ZIP.

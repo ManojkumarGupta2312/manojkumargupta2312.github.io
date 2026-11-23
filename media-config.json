@@ -1,75 +1,87 @@
 {
-  "description": "Original media filenames preserved exactly; derived posters and crops are in assets/images.",
   "media": [
     {
-      "original_filename": "Snapshots showing the propogation of the vortex ring.jpg",
-      "section": "01 — Vortex-ring generation & characterisation",
+      "source": "droplet laden vortex flow facility developed at IIT Delhi.png",
+      "section": "01 Experimental facility",
       "destination": "assets/media/",
-      "type": "JPEG image",
-      "included": true
+      "type": "PNG",
+      "status": "Included; original filename"
     },
     {
-      "original_filename": "Vortex ring PIV_analysed into the MAtalb PIVlab.mp4",
-      "section": "01 — Vortex-ring generation & characterisation",
+      "source": "Snapshots showing the propogation of the vortex ring.jpg",
+      "section": "02 Fog-seeded flow visualisation",
       "destination": "assets/media/",
-      "type": "MP4 video",
-      "included": true
+      "type": "JPEG",
+      "status": "Included; original filename"
     },
     {
-      "original_filename": "droplet laden vortex flow facility developed at IIT Delhi.png",
-      "section": "02 — Vortex-ring/droplet interaction",
+      "source": "Vortex ring PIV_analysed into the MAtalb PIVlab.mp4",
+      "section": "03 Vortex characterisation",
       "destination": "assets/media/",
-      "type": "PNG image",
-      "included": true
+      "type": "MP4",
+      "status": "Included; original filename"
     },
     {
-      "original_filename": "Interaction of vortex ring with polydisperse droplets.mp4",
-      "section": "02 — Vortex-ring/droplet interaction",
+      "source": "Interaction of vortex ring with polydisperse droplets.mp4",
+      "section": "04 Droplet interaction",
       "destination": "assets/media/",
-      "type": "MP4 video",
-      "included": true
+      "type": "MP4",
+      "status": "Included; original filename"
     },
     {
-      "original_filename": "Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4",
-      "section": "03 — Lagrangian tracking in the vortex frame",
+      "source": "Matlab analysed movie of exp. clip of interaction of vortex ring with droplets.mp4",
+      "section": "05 Lagrangian tracking",
       "destination": "assets/media/",
-      "type": "MP4 video",
-      "included": true
+      "type": "MP4",
+      "status": "Included; original filename"
     },
     {
-      "original_filename": "Vortex ring frame voronoii analysis.mp4",
-      "section": "04 — Preferential concentration and Voronoï",
+      "source": "Vortex ring frame voronoii analysis.mp4",
+      "section": "06 Preferential concentration",
       "destination": "assets/media/",
-      "type": "MP4 video",
-      "included": true
+      "type": "MP4",
+      "status": "Included; original filename"
     },
     {
-      "original_filename": "voronoii-analysis-in-the-vortex-frame-in-abl-like-tbl_ARNha4gT(1).mp4",
-      "section": "06 — Droplets in turbulent boundary layers",
-      "destination": "assets/media/",
-      "type": "MP4 video",
-      "included": true
-    },
-    {
-      "original_filename": "TBL + Droplets Interaction(1).jpeg",
-      "section": "Not published: source is a File Explorer screenshot, not facility image",
-      "destination": "Not applicable",
-      "type": "JPEG screenshot",
-      "included": false
-    },
-    {
-      "original_filename": "Figure 5.8 in submitted thesis (page 194 of PDF)",
-      "section": "05 — Collision-relevant pair statistics",
+      "source": "Figure 5.8, submitted PhD thesis",
+      "section": "07 Kinematic near-contact kernel",
       "destination": "assets/images/kinematic-kernel-thesis-fig-5-8.webp",
-      "type": "Derived image crop",
-      "included": true
+      "type": "WEBP",
+      "status": "Included thesis figure crop"
     },
     {
-      "original_filename": "Figure 6.1 in submitted thesis (page 211 of PDF)",
-      "section": "06 — Turbulent boundary-layer facility",
-      "destination": "assets/images/wind-tunnel-arrangement-thesis-fig-6-1.webp",
-      "type": "Derived image crop",
-      "included": true
+      "source": "Figure 6.1, submitted PhD thesis",
+      "section": "08 TBL facility",
+      "destination": "assets/images/tbl-facility.jpg",
+      "type": "JPEG",
+      "status": "Included replaceable working copy"
+    },
+    {
+      "source": "voronoii-analysis-in-the-vortex-frame-in-abl-like-tbl_ARNha4gT(1).mp4",
+      "section": "09 TBL Voronoi analysis",
+      "destination": "assets/media/tbl-voronoi.mp4",
+      "type": "MP4",
+      "status": "Included replaceable working copy; original retained"
+    },
+    {
+      "source": "manoj-profile.png (existing website)",
+      "section": "Hero portrait",
+      "destination": "assets/images/profile-photo.jpg",
+      "type": "JPEG",
+      "status": "Included replaceable working copy; original retained"
+    },
+    {
+      "source": "TBL + Droplets Interaction(1).jpeg",
+      "section": "Not used: source is a File Explorer screenshot",
+      "destination": "None",
+      "type": "JPEG",
+      "status": "Not included in webpage; genuine facility photograph not yet supplied"
     }
-  ]
+  ],
+  "editable_assets": {
+    "portrait": "assets/images/profile-photo.jpg",
+    "tbl_image": "assets/images/tbl-facility.jpg",
+    "tbl_video": "assets/media/tbl-voronoi.mp4",
+    "tbl_video_poster": "assets/images/tbl-video-poster.jpg"
+  }
 }
