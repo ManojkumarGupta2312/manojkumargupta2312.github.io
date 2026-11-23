@@ -1,0 +1,82 @@
+[
+  {
+    "scrollWidth": 320,
+    "viewport": 320,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 29.125,
+    "firstCardColumns": "284px",
+    "width": 320,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "scrollWidth": 375,
+    "viewport": 375,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 29.125,
+    "firstCardColumns": "339px",
+    "width": 375,
+    "overflow": false,
+    "errors": [],
+    "menu_open": "flex",
+    "menu_closed": "none"
+  },
+  {
+    "scrollWidth": 414,
+    "viewport": 414,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 31.578125,
+    "firstCardColumns": "378px",
+    "width": 414,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "scrollWidth": 768,
+    "viewport": 768,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 39.078125,
+    "firstCardColumns": "704px",
+    "width": 768,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "scrollWidth": 1024,
+    "viewport": 1024,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 49.71875,
+    "firstCardColumns": "586.141px 334.953px",
+    "width": 1024,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "scrollWidth": 1366,
+    "viewport": 1366,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 70.3125,
+    "firstCardColumns": "808.391px 389.688px",
+    "width": 1366,
+    "overflow": false,
+    "errors": [],
+    "abstract_opens": true
+  },
+  {
+    "scrollWidth": 1920,
+    "viewport": 1920,
+    "images": 5,
+    "imagesTotal": 5,
+    "nameHeight": 76.046875,
+    "firstCardColumns": "807.656px 389.328px",
+    "width": 1920,
+    "overflow": false,
+    "errors": []
+  }
+]

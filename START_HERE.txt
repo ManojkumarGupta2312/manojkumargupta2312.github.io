@@ -1,0 +1,24 @@
+OPEN THIS WEBSITE — 3 STEPS (WINDOWS)
+
+1. Right-click the downloaded ZIP > Extract All > Extract.
+2. Open the extracted folder. It must contain index.html, assets/, files/ and PREVIEWS/.
+3. Double-click index.html to open the website. DO NOT open index.html inside the ZIP preview in WinRAR/Windows ZIP Explorer; extract first or CSS, videos and images may not load.
+
+The images in PREVIEWS/WEBSITE_PREVIEW_DESKTOP.png and PREVIEWS/WEBSITE_PREVIEW_MOBILE.png are screenshots rendered using the SAME index.html, styles.css and media included in this ZIP.
+
+UPDATE GITHUB PAGES:
+A. Open GitHub Desktop and choose the repository manojkumargupta2312.github.io.
+B. Click Repository > Show in Explorer. This is the local CLONED REPOSITORY root.
+C. Preserve hidden .git and any .github/, CNAME or .nojekyll files.
+D. Replace the previous website files (index.html, assets/, files/, and older documentation) with the CONTENTS of this extracted website folder. Do not paste an additional parent folder around index.html.
+E. In GitHub Desktop: enter summary "Update academic portfolio" > Commit to main > Push origin.
+F. Visit https://manojkumargupta2312.github.io/ after Pages deployment; press Ctrl+Shift+R.
+
+UPDATE MEDIA WITHOUT CODE CHANGES:
+- Profile photo: assets/images/profile-photo.jpg (JPEG)
+- TBL photograph: assets/images/tbl-facility.jpg (JPEG)
+- TBL Voronoi video: assets/media/tbl-voronoi.mp4 (MP4/H.264)
+- Optional video preview still: assets/images/tbl-video-poster.jpg
+Use the EXACT filenames. Turn on File name extensions in Windows Explorer.
+
+If you see an older design after uploading, verify that the updated assets/css/styles.css was pushed with index.html, that index.html is at your repository root, and that GitHub Pages has finished deploying. Refresh in a private/incognito browser window to eliminate stale CSS cache.

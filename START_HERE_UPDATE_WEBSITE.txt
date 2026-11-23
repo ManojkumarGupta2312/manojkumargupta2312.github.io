@@ -1,23 +1,25 @@
-UPDATE THIS WEBSITE — QUICK STEPS (WINDOWS)
+HOW TO REPLACE THREE MEDIA FILES AND PUBLISH (WINDOWS)
 
-FIRST: Extract this ZIP. Inside the website folder, find index.html, assets and files.
+FIRST: Extract this ZIP into a folder in Downloads. Do not upload the ZIP itself to your repository.
 
-TO CHANGE 3 MEDIA FILES (optional):
-1. Profile image: assets/images/profile-photo.jpg (JPEG)
-2. TBL photograph: assets/images/tbl-facility.jpg (JPEG)
-3. TBL video: assets/media/tbl-voronoi.mp4 (MP4 / H.264)
-4. Optional video poster: assets/images/tbl-video-poster.jpg
-Replace these files using exactly the same filenames. No HTML editing needed.
+OPTIONAL — REPLACE THESE THREE FILES BEFORE PUBLISHING:
+1. New profile photo: save as JPG named profile-photo.jpg; replace assets/images/profile-photo.jpg.
+2. New TBL facility image: save as JPG named tbl-facility.jpg; replace assets/images/tbl-facility.jpg.
+3. New TBL Voronoi video: export as MP4 (H.264 recommended), rename it tbl-voronoi.mp4; replace assets/media/tbl-voronoi.mp4.
+   Optional: also replace assets/images/tbl-video-poster.jpg with a matching JPEG still frame.
+NOTE: New replacement media were not attached with this request, so the included examples stay unchanged until you replace them.
 
-TO UPDATE GITHUB:
-1. Open GitHub Desktop → select manojkumargupta2312.github.io.
-2. Repository → Show in Explorer.
-3. In repository root, replace website files with ALL CONTENTS of this extracted folder.
-   Preserve hidden .git and any .github, CNAME, .nojekyll files.
-   index.html must be in the repository ROOT (not another nested folder).
-4. GitHub Desktop → Commit to main → Push origin.
-5. Check GitHub Actions / Settings → Pages, then open:
-   https://manojkumargupta2312.github.io/
-6. Refresh browser with Ctrl + Shift + R after deployment.
+TO PUBLISH USING GITHUB DESKTOP:
+1. Open GitHub Desktop and select your repository: manojkumargupta2312.github.io.
+2. Menu Repository > Show in Explorer (the OLD website repository folder).
+3. Save a backup of this old repository folder before changing files.
+4. In that folder, delete/replace old index.html, assets/, files/ and other old site data you want to replace.
+   DO NOT delete .git, .github, CNAME, .nojekyll, or other deployment settings.
+5. Open the NEW extracted folder and copy ALL ITS CONTENTS into the root of the repository folder.
+   index.html must be directly at the repository root, not one folder deeper.
+6. Return to GitHub Desktop. Type summary: Updated academic website and APS DFD 2026 abstract.
+7. Click Commit to main, then Push origin.
+8. Open https://manojkumargupta2312.github.io/ and refresh Ctrl+Shift+R after Pages deploys.
+9. Check the APS abstract, profile image, TBL facility image and TBL video.
 
-If you already deleted old files: Git keeps committed history; deleting old files locally does not automatically delete your ability to recover them.
+The original submitted thesis PDF is not included in this website ZIP.
